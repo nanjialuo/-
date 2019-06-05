@@ -1,0 +1,437 @@
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+}
+.ownfilling-title {
+  position: absolute;
+  left: 30px;
+  top: 26px;
+  color: #515a6e;
+}
+.ownfilling-main {
+  width: 79.46210269%;
+  width: 100%;
+  height: 422px;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding-left: 8%;
+  box-sizing: border-box;
+}
+.ownfilling-main .person-info {
+  height: 80%;
+}
+.ownfilling-main .person-info .p-first-line,
+.ownfilling-main .person-info .p-second-line,
+.ownfilling-main .person-info .p-third-line,
+.ownfilling-main .person-info .p-catch-line {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  font-size: 14px;
+}
+.ownfilling-main .person-info .p-first-line span,
+.ownfilling-main .person-info .p-second-line span,
+.ownfilling-main .person-info .p-third-line span,
+.ownfilling-main .person-info .p-catch-line span {
+  width: 56px;
+  position: absolute;
+  top: 0;
+}
+.ownfilling-main .person-info .p-first-line .info-tip,
+.ownfilling-main .person-info .p-second-line .info-tip,
+.ownfilling-main .person-info .p-third-line .info-tip,
+.ownfilling-main .person-info .p-catch-line .info-tip {
+  width: 1%;
+  position: absolute;
+  left: -15px;
+  font-family: '微软雅黑';
+  font-size: 17px;
+  color: red;
+  vertical-align: middle;
+}
+.ownfilling-main .person-info .p-first-line .psavebox,
+.ownfilling-main .person-info .p-second-line .psavebox,
+.ownfilling-main .person-info .p-third-line .psavebox,
+.ownfilling-main .person-info .p-catch-line .psavebox {
+  left: 1%;
+}
+.ownfilling-main .person-info .p-first-line .pcatchall,
+.ownfilling-main .person-info .p-second-line .pcatchall,
+.ownfilling-main .person-info .p-third-line .pcatchall,
+.ownfilling-main .person-info .p-catch-line .pcatchall {
+  left: 1%;
+}
+.ownfilling-main .person-info .p-first-line .pownslist,
+.ownfilling-main .person-info .p-second-line .pownslist,
+.ownfilling-main .person-info .p-third-line .pownslist,
+.ownfilling-main .person-info .p-catch-line .pownslist {
+  left: 1%;
+}
+.ownfilling-main .person-info .p-first-line .openbox,
+.ownfilling-main .person-info .p-second-line .openbox,
+.ownfilling-main .person-info .p-third-line .openbox,
+.ownfilling-main .person-info .p-catch-line .openbox {
+  width: 83px;
+  height: 40px;
+  line-height: 38px;
+  position: absolute;
+  left: 35%;
+  font-size: 14px;
+  background: #fff url('../../../assets/images/owns/btn_输入框开箱.png') no-repeat 25% center;
+  cursor: pointer;
+  border: 1px solid #cfd5e3;
+  padding-left: 2%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.ownfilling-main .person-info .p-first-line #paddlist,
+.ownfilling-main .person-info .p-second-line #paddlist,
+.ownfilling-main .person-info .p-third-line #paddlist,
+.ownfilling-main .person-info .p-catch-line #paddlist {
+  width: 80px;
+  width: 7%;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  position: absolute;
+  left: 9%;
+  top: 8px;
+  background-color: #4c84ff;
+  border: 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.ownfilling-main .person-info .p-first-line #paddlist span,
+.ownfilling-main .person-info .p-second-line #paddlist span,
+.ownfilling-main .person-info .p-third-line #paddlist span,
+.ownfilling-main .person-info .p-catch-line #paddlist span {
+  display: block;
+  height: 100%;
+  text-align: left;
+  font-size: 20px;
+  position: absolute;
+  left: 8%;
+  top: -2px;
+}
+.ownfilling-main .person-info .p-first-line > input,
+.ownfilling-main .person-info .p-second-line > input,
+.ownfilling-main .person-info .p-third-line > input,
+.ownfilling-main .person-info .p-catch-line > input {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  border: 1px solid #cfd5e3;
+  padding: 0 1%;
+  box-sizing: border-box;
+}
+.ownfilling-main .person-info .p-first-line .pname,
+.ownfilling-main .person-info .p-second-line .pname,
+.ownfilling-main .person-info .p-third-line .pname,
+.ownfilling-main .person-info .p-catch-line .pname {
+  left: 1%;
+}
+.ownfilling-main .person-info .p-first-line #pname,
+.ownfilling-main .person-info .p-second-line #pname,
+.ownfilling-main .person-info .p-third-line #pname,
+.ownfilling-main .person-info .p-catch-line #pname,
+.ownfilling-main .person-info .p-first-line #psavebox,
+.ownfilling-main .person-info .p-second-line #psavebox,
+.ownfilling-main .person-info .p-third-line #psavebox,
+.ownfilling-main .person-info .p-catch-line #psavebox {
+  left: 9%;
+  background-color: #f5f6fa;
+}
+.ownfilling-main .person-info .p-first-line .pnumber,
+.ownfilling-main .person-info .p-second-line .pnumber,
+.ownfilling-main .person-info .p-third-line .pnumber,
+.ownfilling-main .person-info .p-catch-line .pnumber {
+  left: 48%;
+}
+.ownfilling-main .person-info .p-first-line #pnumber,
+.ownfilling-main .person-info .p-second-line #pnumber,
+.ownfilling-main .person-info .p-third-line #pnumber,
+.ownfilling-main .person-info .p-catch-line #pnumber {
+  left: 57%;
+  background-color: #f5f6fa;
+}
+.ownfilling-main .person-info .sep-line {
+  height: 16px;
+}
+.ownfilling-main .person-info .p-third-line {
+  height: 208px;
+  box-sizing: border-box;
+}
+.ownfilling-main .person-info .plistdetail {
+  width: 996px;
+  width: 81%;
+  border: 1px solid #cfd5e3;
+  position: absolute;
+  left: 9%;
+  top: 0;
+  box-sizing: border-box;
+}
+.ownfilling-main .person-info .plistdetail .owns-list-detail {
+  width: 100%;
+  position: relative;
+}
+.ownfilling-main .person-info .p-catch-line {
+  height: 134px;
+}
+.ownfilling-main .person-info #detectCatch {
+  width: 23%;
+  height: 134px;
+  top: 0;
+  position: absolute;
+  left: 9%;
+}
+.ownfilling-main .person-info input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #a8acb8;
+}
+.ownfilling-main .person-info input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a8acb8;
+}
+.ownfilling-main .person-info input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a8acb8;
+}
+.ownfilling-main .person-info input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #a8acb8;
+}
+.info-end {
+  line-height: 106px;
+  position: absolute;
+  bottom: 18px;
+  right: 20%;
+  margin-right: 32px;
+}
+.info-end > button {
+  width: 124px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.info-end > button.btn-ensure {
+  margin-right: 10px;
+  background-color: #457EFB;
+  box-shadow: 4px 4px 8px #4c84ff;
+  color: #fff;
+}
+.info-end > button.btn-reset,
+.info-end > button.btn-skip {
+  background-color: #fff;
+  line-height: 36px;
+  box-shadow: 4px 4px 8px #c9c0d4;
+}
+.info-end > button.btn-skip {
+  margin-right: 10px;
+}
+.info-end-tips {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  color: #a8acb8;
+}
+.info-end-tips > span {
+  vertical-align: middle;
+  color: red;
+  font-family: '微软雅黑';
+  margin-right: 10px;
+}
+.sign-second-line {
+  width: 100%;
+  height: 202px;
+  position: relative;
+  font-size: 14px;
+  margin-top: 16px;
+}
+.sign-second-line span {
+  width: 56px;
+  position: absolute;
+  top: 0;
+}
+.sign-second-line .info-tip {
+  width: 1%;
+  position: absolute;
+  left: -15px;
+  font-family: '微软雅黑';
+  font-size: 17px;
+  color: red;
+  vertical-align: middle;
+}
+.sign-second-line .first-box-txt {
+  left: 1%;
+}
+.sign-second-line .second-box-txt {
+  left: 48%;
+}
+.sign-second-line .sign-main-img {
+  width: 422px;
+  width: 33%;
+  height: 202px;
+  position: absolute;
+  top: 0;
+  border: 1px solid #cfd5e3;
+  box-sizing: border-box;
+  color: #a8acb8;
+}
+.sign-second-line .sign-main-img.sign-main-left-third {
+  left: 9%;
+}
+.sign-second-line .sign-main-img .sign-img-sign {
+  width: 295px;
+  width: 70%;
+  height: 100%;
+  border-right: 1px solid #cfd5e3;
+  box-sizing: border-box;
+  background: url('../../../assets/images/bodycheck/ind_签名.png') no-repeat 45% 45%;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.sign-second-line .sign-main-img .sign-img-sign .model-overlay-sign {
+  position: absolute;
+  top: 0;
+  left: 148px;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  /*兼容rgb不可以用的浏览器*/
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 10;
+  visibility: hidden;
+}
+.sign-second-line .sign-main-img .sign-img-sign .model-box-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 270px;
+  width: 91%;
+  height: 121px;
+  z-index: 11;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  visibility: hidden;
+}
+.sign-second-line .sign-main-img .sign-img-sign .model-box-sign img {
+  width: 80%;
+  height: 100%;
+}
+.sign-second-line .sign-main-img .sign-img-sign > p {
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+}
+.sign-second-line .sign-main-img .sign-img-sign > div {
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  border-top: 1px solid #cfd5e3;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sign-second-line .sign-main-img .sign-img-finger {
+  width: 124px;
+  width: 30%;
+  height: 100%;
+  background: url('../../../assets/images/bodycheck/ind_指纹.png') no-repeat 45% 45%;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.sign-second-line .sign-main-img .sign-img-finger .model-overlay-finger {
+  position: absolute;
+  top: 0;
+  left: 62px;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  /*兼容rgb不可以用的浏览器*/
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 10;
+  visibility: hidden;
+}
+.sign-second-line .sign-main-img .sign-img-finger .model-box-finger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  width: 76%;
+  height: 121px;
+  z-index: 11;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  visibility: hidden;
+}
+.sign-second-line .sign-main-img .sign-img-finger .model-box-finger img {
+  width: 80%;
+}
+.sign-second-line .sign-main-img .sign-img-finger > p {
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+}
+.sign-second-line .sign-main-img .sign-img-finger > div {
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  border-top: 1px solid #cfd5e3;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.body-checkinfo-agreement-box {
+  width: 79.46210269%;
+  height: 422px;
+  position: absolute;
+  top: 208px;
+  overflow: hidden;
+}
+#body-checkinfo-content {
+  height: 844px;
+}
+#body-checkinfo-scroll-bar {
+  position: absolute;
+  width: 10px;
+  height: 300px;
+  right: 73px;
+  right: 8%;
+  top: 0px;
+  background-color: transparent;
+}
+#body-checkinfo-bar {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #adb0be;
+}

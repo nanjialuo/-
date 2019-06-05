@@ -1,0 +1,67 @@
+<div class="mainbody">
+  <p class="entry-record-title">入区记录</p>
+  <div class="entry-record-main">
+    <div class="table-sort">
+      <ul class="loc-sort">
+        <li @click="showCurrentSort($event,'.loc-sort')">全部</li>
+        <li class="currentSort" @click="showCurrentSort($event,'.loc-sort')">未出区</li>
+        <li @click="showCurrentSort($event,'.loc-sort')">已出区</li>
+      </ul>
+      <ul class="pe-sort">
+        <li class="currentSort" @click="showCurrentSort($event,'.pe-sort')">涉案人员</li>
+        <li @click="showCurrentSort($event,'.pe-sort')">办案民警</li>
+        <li @click="showCurrentSort($event,'.pe-sort')">其他人员</li>
+      </ul>
+      <ul class="time-sort">
+        <li class="currentSort" @click="showCurrentSort($event,'.time-sort')">今日</li>
+        <li @click="showCurrentSort($event,'.time-sort')">本周</li>
+        <li @click="showCurrentSort($event,'.time-sort')">本月</li>
+        <li @click="showCurrentSort($event,'.time-sort')">自定义</li>
+      </ul>
+      <button>扫描</button>
+      <div class="record-search">
+        <input type="text" placeholder="案卷编号/腕带编号/姓名">
+        <div class="search-btn"></div>
+      </div>
+    </div>
+    <div class="entry-record-table">
+      <el-table :header-cell-style="{background:'#f5f6fa',color:'#606266'}"
+        :data="entryRecord.slice((currentPage-1)*pagesize,currentPage*pagesize)" style="width: 100%">
+        <el-table-column prop="recordid" label="编号" align="center" min-width="30%">
+        </el-table-column>
+        <el-table-column prop="wristbandNum" label="腕带编号" align="center" min-width="40%">
+        </el-table-column>
+        <el-table-column prop="name" label="涉案人员" align="center" min-width="40%">
+        </el-table-column>
+        <el-table-column prop="relerecord" label="关联案卷" align="center">
+        </el-table-column>
+        <el-table-column prop="recordNum" label="案卷编号" align="center" min-width="40%">
+        </el-table-column>
+        <el-table-column prop="entryTime" label="入区时间" align="center">
+        </el-table-column>
+        <el-table-column prop="leaveTime" label="出区时间" align="center">
+        </el-table-column>
+        <el-table-column prop="status" label="状态" align="center" min-width="30%">
+          <template slot-scope="scope">
+            <span>{{scope.row.status == 0 ? '未出区' : '已出区'}}</span>
+          </template>
+        </el-table-column>
+        <el-table-column prop="operate" label="操作" align="center" min-width="100%">
+          <template slot-scope="scope">
+            <a href="javascript:void(0);" @click="toRecordTb(scope.row.name, scope.row.wristbandNum)">登记表</a>
+            <a href="javascript:void(0);" @click="toRecordVedio(scope.row.name, scope.row.wristbandNum)">轨迹录像</a>
+            <a href="javascript:void(0);" @click.self="codePrint">条形码打印</a>
+          </template>
+        </el-table-column>
+      </el-table>
+      </template>
+      <!-- 分页 -->
+      <div class="table-pagenation block">
+        <el-pagination background @size-change="handleSizeChange" @current-change="handleCurrentChange"
+          :current-page="currentPage" :page-sizes="[2, 10, 30, 40]" :page-size="pagesize"
+          layout="total, sizes, prev, pager, next, jumper" :total="entryRecord.length">
+        </el-pagination>
+      </div>
+    </div>
+  </div>
+</div>

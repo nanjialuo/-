@@ -1,0 +1,35 @@
+.common-head .head-top {
+  background: linear-gradient(to right, #565353 , #434040);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#565353, endColorstr=#434040);
+}
+
+.common-head .head-nav {
+  background: linear-gradient(to right, #2b2828 , #332f2f);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#2b2828, endColorstr=#332f2f);
+}
+
+.common-head .head-nav .nav-list>li>a:hover {
+  background-color: #494545;
+}
+
+.common-head .head-nav .nav-list>li.currentHeadNav>a {
+  background-color: #494545;
+}
+
+.ban_show .ban_aside {
+  background-color: #fff;
+}
+
+.ban_show .ban_aside .aside_menu>li a {
+  color: #515a6e !important;
+}
+
+.ban_show .ban_aside .aside_menu>li a:hover {
+  background-color: #f5f6fa !important;
+  border-left: 4px solid #b9b9b2 !important;
+}
+
+.ban_show .ban_aside .aside_menu>li.currentAsideMenu a {
+  background-color: #f5f6fa !important;
+  border-left: 4px solid #b9b9b2 !important;
+}

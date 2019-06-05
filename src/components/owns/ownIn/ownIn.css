@@ -1,0 +1,323 @@
+.checkin-container {
+  width: 100%;
+  padding-top: 104px;
+  border: 1px solid #dadbe4;
+  background-color: #fff;
+  position: relative;
+}
+.checkin-container > p {
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  color: #a8acb8;
+}
+.checkin-container > p .checkin-head {
+  color: #515a6e;
+  margin-right: 28px;
+}
+.checkin-container .checkin-main {
+  width: 100%;
+  height: 635px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.checkin-container .checkin-main .main-content {
+  width: 100%;
+  padding-left: 11.73594132%;
+  padding-right: 11.73594132%;
+  box-sizing: border-box;
+  position: relative;
+}
+.checkin-container .checkin-main .checkin-left-total {
+  width: 35.8801956%;
+  padding-right: 1px;
+  height: 635px;
+  position: absolute;
+  left: 11.73594132%;
+  box-sizing: border-box;
+}
+.checkin-container .checkin-main .checkin-left {
+  width: 100%;
+  padding-right: 68px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.checkin-container .checkin-main .checkin-left .left-head {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.checkin-container .checkin-main .checkin-left .left-head > p {
+  color: #515a6e;
+  margin-bottom: 12px;
+}
+.checkin-container .checkin-main .checkin-left .left-head > div {
+  width: 55px;
+  height: 3px;
+  background-color: #E5EEFF;
+  margin: 0 auto;
+}
+.checkin-container .checkin-main .checkin-left .left-head > div .current-style {
+  width: 23px;
+  height: 3px;
+  float: left;
+  background-color: #4780FD;
+}
+.checkin-container .checkin-main .checkin-left .left-box {
+  height: 290px;
+  background: url('../../../assets/images/bodycheck/ind_腕带扫描.png') no-repeat center;
+  width: 100%;
+  border: 1px solid #CFD5E3;
+  text-align: center;
+  padding-top: 222px;
+  box-sizing: border-box;
+  color: #a8acb8;
+  border-radius: 2px;
+  position: relative;
+}
+.checkin-container .checkin-main .checkin-left .left-box .model-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  /*兼容rgb不可以用的浏览器*/
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 10;
+  visibility: hidden;
+}
+.checkin-container .checkin-main .checkin-left .left-box .model-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  z-index: 11;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  visibility: hidden;
+}
+.checkin-container .checkin-main .checkin-left .left-box .model-close {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  font-size: 2em;
+  float: right;
+}
+.checkin-container .checkin-main .checkin-left .left-box .model-btn-close {
+  font-size: 1em;
+  background-color: #999;
+  color: #fff;
+}
+.checkin-container .checkin-main .checkin-left .left-footer {
+  width: 100%;
+  position: relative;
+  height: 175px;
+}
+.checkin-container .checkin-main .checkin-left .left-footer > span {
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+.checkin-container .checkin-main .checkin-left .left-footer > div {
+  width: 80%;
+  height: 38px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+.checkin-container .checkin-main .checkin-left .left-footer > div > input {
+  width: 100%;
+  height: 38px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  line-height: 38px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #CFD5E3;
+}
+.checkin-container .checkin-main .checkin-left .left-footer input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #a8acb8;
+}
+.checkin-container .checkin-main .checkin-left .left-footer input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a8acb8;
+}
+.checkin-container .checkin-main .checkin-left .left-footer input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a8acb8;
+}
+.checkin-container .checkin-main .checkin-left .left-footer input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #a8acb8;
+}
+.checkin-container .checkin-main .sep-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 465px;
+  margin-top: 62px;
+  background-color: #CFD5E3;
+}
+.checkin-container .checkin-main .checkin-right {
+  width: 40.2200489%;
+  height: 635px;
+  padding-left: 72px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 11.73594132%;
+  top: 0;
+}
+.checkin-container .checkin-main .checkin-right .left-head {
+  width: 100%;
+  padding-right: 12.34718826%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.checkin-container .checkin-main .checkin-right .left-head > p {
+  color: #515a6e;
+  margin-bottom: 12px;
+}
+.checkin-container .checkin-main .checkin-right .left-head > div {
+  width: 55px;
+  height: 3px;
+  background-color: #E5EEFF;
+  margin: 0 auto;
+}
+.checkin-container .checkin-main .checkin-right .left-head > div .current-style {
+  width: 32px;
+  height: 3px;
+  float: right;
+  background-color: #4780FD;
+}
+.checkin-container .checkin-main .checkin-right .right-box {
+  height: 465px;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list {
+  width: 100%;
+  height: 465px;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li {
+  float: left;
+  position: relative;
+  border: 1px solid #CFD5E3;
+  width: 23%;
+  height: 175px;
+  padding-top: 16px;
+  box-sizing: border-box;
+  margin-right: 2%;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li img {
+  width: 80%;
+  height: 121px;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:hover .p-info {
+  display: block;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(3) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(4) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(7) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(8) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(11) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(12) .p-info {
+  left: -150%;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(9) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(10) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(11) .p-info,
+.checkin-container .checkin-main .checkin-right .right-box .p-list li:nth-child(12) .p-info {
+  top: -50%;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li > a {
+  display: block;
+  color: #000;
+  text-align: center;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li > a > p {
+  height: 36px;
+  line-height: 36px;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li .p-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  min-width: 200px;
+  height: 168px;
+  border-radius: 4px;
+  padding-left: 15%;
+  padding-top: 14px;
+  text-align: left;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: none;
+  z-index: 999;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li .p-info > p {
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+.checkin-container .checkin-main .checkin-right .right-box .p-list li .p-info > p .pinfo-left {
+  margin-right: 12px;
+}
+.checkin-container .checkin-main .checkin-right .right-end {
+  height: 106px;
+  line-height: 106px;
+  float: right;
+  margin-right: 32px;
+}
+.checkin-container .checkin-main .checkin-right .right-end > button {
+  width: 124px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.checkin-container .checkin-main .checkin-right .right-end > button.btn-ensure {
+  margin-right: 10px;
+  background-color: #457EFB;
+  color: #fff;
+  box-shadow: 4px 4px 8px #4c84ff;
+}
+.checkin-container .checkin-main .checkin-right .right-end > button.btn-reset {
+  background-color: #fff;
+  line-height: 36px;
+  box-shadow: 4px 4px 8px #c9c0d4;
+}
+.checkin-agreement-box {
+  position: relative;
+  overflow: hidden;
+}
+#checkin-scroll-bar {
+  position: absolute;
+  width: 5px;
+  height: 365px;
+  right: 0;
+  top: 0;
+  border-radius: 2px;
+  background-color: transparent;
+}
+#checkin-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #adb0be;
+}

@@ -1,0 +1,192 @@
+@totalW: 778+858px;
+
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
+  border: 1px solid #dadbe4;
+}
+
+.askroom-title {
+  position: absolute;
+  left: 30px;
+  top: 33px;
+  color: #515a6e;
+}
+
+.askroom-main {
+  width: 100%;
+  top: 76px;
+  position: relative;
+  box-sizing: border-box;
+
+  .askroom-detail {
+    position: relative;
+    width: 100%;
+
+    &.greeting-room {
+      top: 0;
+    }
+
+    &.asking-room {
+      top: 206px;
+
+      .asking-room-list {
+        >li {
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+    >li {
+      >input {
+        display: none;
+
+        &:checked+label {
+          color: #4C84FF;
+          border-bottom: 1px solid #4C84FF;
+        }
+
+        &:checked~.content {
+          opacity: 1;
+          visibility: visible;
+        }
+
+      }
+
+      >label {
+        float: left;
+        width: 92px;
+        line-height: 32px;
+        border-bottom: 1px solid transparent;
+        /* padding: 0 17px 0 20px; */
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: all .3s;
+        color: #a8acb8;
+        text-align: center;
+      }
+
+      >.content {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 33px;
+        width: 100%;
+        height: 190px;
+        border-top: 1px solid #cfd5e3;
+        box-sizing: border-box;
+        transition: all .3s;
+        font-size: 14px;
+
+
+        .greeting-room-list,
+        .asking-room-list {
+          width: 100%;
+          height: 100%;
+          padding-top: 20px;
+          box-sizing: border-box;
+
+          >li {
+            width: 215px;
+            width: 13.11%;
+            height: 169px;
+            float: left;
+            margin-right: 20px;
+            margin-right: 1.2%;
+            position: relative;
+
+            >.video-bg {
+              width: 100%;
+              height: 147px;
+              position: relative;
+              border-radius: 3px;
+              overflow: hidden;
+
+              .vedio-btn {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 48px;
+                height: 48px;
+                background: url('../../assets/images/askroom/btn_查看视频.png');
+                cursor: pointer;
+
+                &:hover {
+                  background: url('../../assets/images/askroom/btn_查看视频hover.png');
+                }
+              }
+
+              &.free {
+                background: url('../../assets/images/askroom/ind_视频空闲.png');
+                background-size: 100% 100%;
+
+                > p {
+                  position: absolute;
+                  color: #fff;
+                  left: 4.7%;
+                  bottom: 8px;
+                  font-size: 12px;
+                }
+              }
+
+              &.busy {
+                background: url('../../assets/images/askroom/ind_视频占用.png');
+                background-size: 100% 100%;
+
+                // 文字渐变
+                > p {
+                  padding-top: 17px;
+                  padding-left: 10px;
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  box-sizing: border-box;
+                  width: 100%;
+                  height: 40px;
+                  background: linear-gradient(to bottom,  transparent 0%,transparent 20%,#323232 100%,transparent 20%);
+                  filter: alpha(opacity=50) progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#323232, endColorstr=#323232);
+                }
+              }
+            }
+
+            >p {
+              position: absolute;
+              left: 50%;
+              font-size: 14px;
+              line-height: 14px;
+              transform: translateX(-50%);
+              bottom: 0;
+            }
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+  .sep-line {
+    height: 40px;
+  }
+}
+
+// @media screen and (max-width:1440px) {
+
+//   .askroom-main .askroom-detail>li>.content .greeting-room-list>li>.video-bg .vedio-btn[data-v-38bc3459],
+//   .askroom-main .askroom-detail>li>.content .asking-room-list>li>.video-bg .vedio-btn {
+//     width: 26px;
+//     height: 26px;
+//     background: url('../../assets/images/askroom/btn_查看视频s.png');
+
+//     &:hover {
+//       background: url('../../assets/images/askroom/btn_查看视频shover.png');
+//     }
+//   }
+// }

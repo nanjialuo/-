@@ -1,0 +1,576 @@
+{
+  "login": [
+    {
+      "username": "admin",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 2
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 3
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 4
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 5
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 6
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 7
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 8
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 9
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 10
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 13
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 14
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 15
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 16
+    },
+    {
+      "username": "111",
+      "password": "222",
+      "id": 17
+    }
+  ],
+  "todoProList": [
+    {
+      "name": "龚勇",
+      "number": "000000123",
+      "timestamp": "08:36",
+      "id": 1,
+      "process": [
+        {
+          "proName": "入区登记",
+          "done": "true",
+          "proId": 0
+        },
+        {
+          "proName": "人身检查",
+          "done": "false",
+          "proId": 1
+        },
+        {
+          "proName": "随身财物",
+          "done": "false",
+          "proId": 2
+        },
+        {
+          "proName": "信息采集",
+          "done": "false",
+          "proId": 3
+        },
+        {
+          "proName": "吸毒检测",
+          "done": "false",
+          "proId": 4
+        },
+        {
+          "proName": "侯问管理",
+          "done": "false",
+          "proId": 5
+        },
+        {
+          "proName": "财物返还",
+          "done": "false",
+          "proId": 6
+        },
+        {
+          "proName": "临时出区",
+          "done": "false",
+          "proId": 7
+        },
+        {
+          "proName": "最终出区",
+          "done": "false",
+          "proId": 8
+        }
+      ]
+    },
+    {
+      "name": "张三",
+      "number": "000000124",
+      "timestamp": "09:56",
+      "id": 2,
+      "process": [
+        {
+          "proName": "入区登记",
+          "done": "true",
+          "proId": 0
+        },
+        {
+          "proName": "人身检查",
+          "done": "true",
+          "proId": 1
+        },
+        {
+          "proName": "随身财物",
+          "done": "false",
+          "proId": 2
+        },
+        {
+          "proName": "信息采集",
+          "done": "false",
+          "proId": 3
+        },
+        {
+          "proName": "吸毒检测",
+          "done": "false",
+          "proId": 4
+        },
+        {
+          "proName": "侯问管理",
+          "done": "false",
+          "proId": 5
+        },
+        {
+          "proName": "财物返还",
+          "done": "false",
+          "proId": 6
+        },
+        {
+          "proName": "临时出区",
+          "done": "false",
+          "proId": 7
+        },
+        {
+          "proName": "最终出区",
+          "done": "false",
+          "proId": 8
+        }
+      ]
+    },
+    {
+      "name": "李四",
+      "number": "000000125",
+      "timestamp": "11:57",
+      "id": 3,
+      "process": [
+        {
+          "proName": "入区登记",
+          "done": "true",
+          "proId": 0
+        },
+        {
+          "proName": "人身检查",
+          "done": "true",
+          "proId": 1
+        },
+        {
+          "proName": "随身财物",
+          "done": "true",
+          "proId": 2
+        },
+        {
+          "proName": "信息采集",
+          "done": "true",
+          "proId": 3
+        },
+        {
+          "proName": "吸毒检测",
+          "done": "false",
+          "proId": 4
+        },
+        {
+          "proName": "侯问管理",
+          "done": "false",
+          "proId": 5
+        },
+        {
+          "proName": "财物返还",
+          "done": "false",
+          "proId": 6
+        },
+        {
+          "proName": "临时出区",
+          "done": "false",
+          "proId": 7
+        },
+        {
+          "proName": "最终出区",
+          "done": "false",
+          "proId": 8
+        }
+      ]
+    },
+    {
+      "name": "王五",
+      "number": "000000126",
+      "timestamp": "14:36",
+      "id": 4,
+      "process": [
+        {
+          "proName": "入区登记",
+          "done": "true",
+          "proId": 0
+        },
+        {
+          "proName": "人身检查",
+          "done": "true",
+          "proId": 1
+        },
+        {
+          "proName": "随身财物",
+          "done": "false",
+          "proId": 2
+        },
+        {
+          "proName": "信息采集",
+          "done": "false",
+          "proId": 3
+        },
+        {
+          "proName": "吸毒检测",
+          "done": "false",
+          "proId": 4
+        },
+        {
+          "proName": "侯问管理",
+          "done": "false",
+          "proId": 5
+        },
+        {
+          "proName": "财物返还",
+          "done": "false",
+          "proId": 6
+        },
+        {
+          "proName": "临时出区",
+          "done": "false",
+          "proId": 7
+        },
+        {
+          "proName": "最终出区",
+          "done": "false",
+          "proId": 8
+        }
+      ]
+    },
+    {
+      "name": "赵六",
+      "number": "000000127",
+      "timestamp": "17:26",
+      "id": 5,
+      "process": [
+        {
+          "proName": "入区登记",
+          "done": "true",
+          "proId": 0
+        },
+        {
+          "proName": "人身检查",
+          "done": "true",
+          "proId": 1
+        },
+        {
+          "proName": "随身财物",
+          "done": "true",
+          "proId": 2
+        },
+        {
+          "proName": "信息采集",
+          "done": "true",
+          "proId": 3
+        },
+        {
+          "proName": "吸毒检测",
+          "done": "true",
+          "proId": 4
+        },
+        {
+          "proName": "侯问管理",
+          "done": "true",
+          "proId": 5
+        },
+        {
+          "proName": "财物返还",
+          "done": "false",
+          "proId": 6
+        },
+        {
+          "proName": "临时出区",
+          "done": "false",
+          "proId": 7
+        },
+        {
+          "proName": "最终出区",
+          "done": "false",
+          "proId": 8
+        }
+      ]
+    }
+  ],
+  "entryRecord": [
+    {
+      "recordid": "1",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "2",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "3",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "4",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "5",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "6",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "7",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "8",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "9",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "10",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "11",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "12",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "13",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "14",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "15",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "16",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "17",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "18",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "19",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    },
+    {
+      "recordid": "20",
+      "wristbandNum": "0110",
+      "name": "张国强",
+      "relerecord": "沪01民初000000001号",
+      "recordNum": "0001号",
+      "entryTime": "2019年4月18日 09:48:40",
+      "leaveTime": "-",
+      "status": "0",
+      "operate": ""
+    }
+  ]
+}

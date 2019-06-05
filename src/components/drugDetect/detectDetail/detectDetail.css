@@ -1,0 +1,192 @@
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+}
+.info-title {
+  position: absolute;
+  left: 30px;
+  top: 26px;
+  color: #515a6e;
+}
+.detect-detail-main {
+  width: 79.46210269%;
+  height: 422px;
+  position: absolute;
+  top: 208px;
+  padding-left: 8%;
+  box-sizing: border-box;
+}
+.detect-detail-main .person-info .p-first-line,
+.detect-detail-main .person-info .p-second-line,
+.detect-detail-main .person-info .p-detect-catch-line {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  font-size: 14px;
+}
+.detect-detail-main .person-info .p-first-line span,
+.detect-detail-main .person-info .p-second-line span,
+.detect-detail-main .person-info .p-detect-catch-line span {
+  width: 56px;
+  position: absolute;
+  top: 0;
+}
+.detect-detail-main .person-info .p-first-line input,
+.detect-detail-main .person-info .p-second-line input,
+.detect-detail-main .person-info .p-detect-catch-line input {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  border: 1px solid #cfd5e3;
+  padding: 0 1%;
+  box-sizing: border-box;
+}
+.detect-detail-main .person-info .p-first-line .pname,
+.detect-detail-main .person-info .p-second-line .pname,
+.detect-detail-main .person-info .p-detect-catch-line .pname,
+.detect-detail-main .person-info .p-first-line .pexplain,
+.detect-detail-main .person-info .p-second-line .pexplain,
+.detect-detail-main .person-info .p-detect-catch-line .pexplain,
+.detect-detail-main .person-info .p-first-line .pcatchall,
+.detect-detail-main .person-info .p-second-line .pcatchall,
+.detect-detail-main .person-info .p-detect-catch-line .pcatchall {
+  left: 1%;
+}
+.detect-detail-main .person-info .p-first-line .info-tip,
+.detect-detail-main .person-info .p-second-line .info-tip,
+.detect-detail-main .person-info .p-detect-catch-line .info-tip {
+  width: 1%;
+  position: absolute;
+  left: -15px;
+  font-family: '微软雅黑';
+  font-size: 17px;
+  color: red;
+  vertical-align: middle;
+}
+.detect-detail-main .person-info .p-first-line #pname,
+.detect-detail-main .person-info .p-second-line #pname,
+.detect-detail-main .person-info .p-detect-catch-line #pname {
+  left: 9%;
+  background-color: #f5f6fa;
+}
+.detect-detail-main .person-info .p-first-line #pexplain,
+.detect-detail-main .person-info .p-second-line #pexplain,
+.detect-detail-main .person-info .p-detect-catch-line #pexplain {
+  left: 9%;
+}
+.detect-detail-main .person-info .p-first-line .pnumber,
+.detect-detail-main .person-info .p-second-line .pnumber,
+.detect-detail-main .person-info .p-detect-catch-line .pnumber {
+  left: 48%;
+}
+.detect-detail-main .person-info .p-first-line #pnumber,
+.detect-detail-main .person-info .p-second-line #pnumber,
+.detect-detail-main .person-info .p-detect-catch-line #pnumber {
+  left: 57%;
+  background-color: #f5f6fa;
+}
+.detect-detail-main .person-info .p-detect-catch-line {
+  height: 134px;
+}
+.detect-detail-main .person-info .p-detect-catch-line #detectCatch {
+  width: 23%;
+  height: 134px;
+  top: 0;
+  position: absolute;
+  left: 9%;
+}
+.detect-detail-main .person-info .sep-line {
+  height: 16px;
+}
+.detect-detail-main .person-info input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #a8acb8;
+}
+.detect-detail-main .person-info input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a8acb8;
+}
+.detect-detail-main .person-info input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a8acb8;
+}
+.detect-detail-main .person-info input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #a8acb8;
+}
+.info-end {
+  line-height: 106px;
+  position: absolute;
+  bottom: 28px;
+  right: 20%;
+  margin-right: 32px;
+}
+.info-end > button {
+  width: 124px;
+  height: 40px;
+  vertical-align: bottom;
+  border-radius: 20px;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.info-end > button.btn-ensure {
+  margin-right: 10px;
+  background-color: #457EFB;
+  color: #fff;
+  box-shadow: 4px 4px 8px #4c84ff;
+}
+.info-end > button.btn-reset,
+.info-end > button.btn-skip {
+  background-color: #fff;
+  line-height: 36px;
+  box-shadow: 4px 4px 8px #c9c0d4;
+}
+.info-end > button.btn-skip {
+  margin-right: 10px;
+}
+.info-end-tips {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  color: #a8acb8;
+}
+.info-end-tips > span {
+  vertical-align: middle;
+  color: red;
+  font-family: '微软雅黑';
+  margin-right: 10px;
+}
+.body-checkinfo-agreement-box {
+  width: 79.46210269%;
+  height: 422px;
+  position: absolute;
+  top: 208px;
+  overflow: hidden;
+}
+#body-checkinfo-content {
+  height: 844px;
+}
+#body-checkinfo-scroll-bar {
+  position: absolute;
+  width: 10px;
+  height: 422px;
+  right: 73px;
+  right: 8%;
+  top: 0px;
+  background-color: transparent;
+}
+#body-checkinfo-bar {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #adb0be;
+}

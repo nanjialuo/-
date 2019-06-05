@@ -1,0 +1,305 @@
+<div class="mainbody">
+  <p class="askroom-title">侯问管理</p>
+  <div class="askroom-main">
+    <ul class="askroom-detail greeting-room">
+      <li>
+        <input id="greeting-room1" type="radio" name="greeting-room" checked>
+        <label for="greeting-room1">侯问室({{greetingRoomList.length}})</label>
+        <div class="content">
+          <ul class="greeting-room-list">
+            <li v-for="(item, index) in greetingRoomList" :key="index">
+              <div :class="{'video-bg':true, 'free':item.status==0, 'busy' : item.status == 1}">
+                <div class="vedio-btn"></div>
+                <p v-if="item.status==0">空闲</p>
+                <p v-else>{{item.current}}人正在等候...</p>
+              </div>
+              <p>{{item.name}}</p>       
+            </li>
+            <!-- <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室2</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在等候...</p>
+              </div>
+              <p>侯问室3</p>
+            </li>
+            <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室4</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>9人正在等候...</p>
+              </div>
+              <p>侯问室5</p>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+      <li>
+        <input id="greeting-room2" type="radio" name="greeting-room">
+        <label for="greeting-room2">空闲({{greetingFree.length}})</label>
+        <div class="content">
+          <ul class="greeting-room-list">
+            <li v-for="(item, index) in greetingFree" :key="index">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>{{item.name}}</p>       
+            </li>
+            <!-- <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室2</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在等候...</p>
+              </div>
+              <p>侯问室3</p>
+            </li>
+            <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室4</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>9人正在等候...</p>
+              </div>
+              <p>侯问室5</p>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+      <li>
+        <input id="greeting-room3" type="radio" name="greeting-room">
+        <label for="greeting-room3">占用({{greetingBusy.length}})</label>
+        <div class="content">
+          <ul class="greeting-room-list">
+            <li v-for="(item, index) in greetingBusy" :key="index">
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>{{item.current}}人正在等候...</p>
+              </div>
+              <p>{{item.name}}</p>       
+            </li>
+            <!-- <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室2</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在等候...</p>
+              </div>
+              <p>侯问室3</p>
+            </li>
+            <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室4</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>9人正在等候...</p>
+              </div>
+              <p>侯问室5</p>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="sep-line"></div>
+    <ul class="askroom-detail asking-room">
+      <li>
+        <input id="asking-room1" type="radio" name="asking-room" checked>
+        <label for="asking-room1">审讯室({{askingRoomList.length}})</label>
+        <div class="content">
+          <ul class="asking-room-list">
+            <li v-for="(item, index) in askingRoomList" :key="index">
+              <div :class="{'video-bg':true, 'free':item.status==0, 'busy' : item.status == 1}">
+                <div class="vedio-btn"></div>
+                <p v-if="item.status==0">空闲</p>
+                <p v-else>{{item.current}}人正在审讯...</p>
+              </div>
+              <p>{{item.name}}</p>       
+            </li>
+            <!-- <li class="free">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>审讯室2</p>
+            </li>
+            <li class="free">
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在审讯...</p>
+              </div>
+              <p>审讯室3</p>
+            </li>
+            <li class="free">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>审讯室4</p>
+            </li>
+            <li class="free">
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在审讯...</p>
+              </div>
+              <p>审讯室5</p>
+            </li>
+            <li class="free">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>审讯室6</p>
+            </li>
+            <li class="free">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>审讯室7</p>
+            </li>
+            <li class="free">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>审讯室8</p>
+            </li>
+            <li class="free">
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在审讯...</p>
+              </div>
+              <p>审讯室9</p>
+            </li>
+            <li class="free">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>审讯室10</p>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+      <li>
+        <input id="asking-room2" type="radio" name="asking-room">
+        <label for="asking-room2">空闲({{askingFree.length}})</label>
+        <div class="content">
+          <ul class="asking-room-list">
+            <li v-for="(item, index) in askingFree" :key="index">
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>{{item.name}}</p>       
+            </li>
+            <!-- <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室2</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在等候...</p>
+              </div>
+              <p>侯问室3</p>
+            </li>
+            <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室4</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>9人正在等候...</p>
+              </div>
+              <p>侯问室5</p>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+      <li>
+        <input id="asking-room3" type="radio" name="asking-room">
+        <label for="asking-room3">占用({{askingBusy.length}})</label>
+        <div class="content">
+          <ul class="asking-room-list">
+            <li v-for="(item, index) in askingBusy" :key="index">
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>{{item.current}}人正在审讯...</p>
+              </div>
+              <p>{{item.name}}</p>       
+            </li>
+            <!-- <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室2</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>1人正在等候...</p>
+              </div>
+              <p>侯问室3</p>
+            </li>
+            <li>
+              <div class="video-bg free">
+                <div class="vedio-btn"></div>
+                <p>空闲</p>
+              </div>
+              <p>侯问室4</p>
+            </li>
+            <li>
+              <div class="video-bg busy">
+                <div class="vedio-btn"></div>
+                <p>9人正在等候...</p>
+              </div>
+              <p>侯问室5</p>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

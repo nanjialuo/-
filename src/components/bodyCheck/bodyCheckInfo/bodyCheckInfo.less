@@ -1,0 +1,660 @@
+@totalW: 778+858px;
+
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+  // padding-top: 176px;
+  // padding-right: 336px;
+}
+
+.info-title {
+  position: absolute;
+  left: 30px;
+  top: 26px;
+  color: #515a6e;
+}
+
+.info-main {
+  width: 1300px/ @totalW * 100%;
+  width: 100%;
+  height: 422px;
+  display: block;
+  position: relative;
+  padding-left: 8%;
+  box-sizing: border-box;
+
+  .person-info {
+
+    .p-first-line,
+    .p-second-line,
+    .pre-re-box-father {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      position: relative;
+      font-size: 14px;
+
+      span {
+        width: 56px;
+        position: absolute;
+        top: 0;
+      }
+
+      .info-tip {
+        width: 1%;
+        position: absolute;
+        left: -15px;
+        font-family: '微软雅黑';
+        font-size: 17px;
+        color: red;
+        vertical-align: middle;
+      }
+
+      .insperson {
+        left: 1%;
+      }
+
+      .presult {
+        left: 1%;
+      }
+
+      select {
+        left: 9%;
+      }
+
+      .pdescription {
+        left: 48%;
+      }
+
+      #pdescription {
+        left: 57%;
+      }
+
+      input,
+      select {
+        position: absolute;
+        top: 0;
+        width: 33%;
+        height: 40px;
+        line-height: 40px;
+        outline: none;
+        border: 1px solid #cfd5e3;
+        padding: 0 1%;
+        box-sizing: border-box;
+      }
+
+      .pname {
+        left: 1%;
+      }
+
+      #pname {
+        left: 9%;
+        background-color: #f5f6fa;
+      }
+
+      .pnumber {
+        left: 48%;
+      }
+
+      #pnumber {
+        left: 57%;
+        background-color: #f5f6fa;
+      }
+
+    }
+
+    .sep-line {
+      height: 16px;
+    }
+
+    .re-box {
+      margin-top: 16px;
+      width: 986+10px;
+      width: 81%;
+      height: 310px;
+      border: 1px solid #cfd5e3;
+      position: absolute;
+      left: 9%;
+      top: -14px;
+      padding-left: 352px;
+      box-sizing: border-box;
+
+
+      .re-box-left {
+        width: 350px;
+        height: 100%;
+        // float: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .img-left-box {
+          width: 160px;
+          height: 100%;
+          float: left;
+          padding-left: 24px;
+          padding-top: 30px;
+          box-sizing: border-box;
+
+          >.pimg-box-l {
+            width: 103px;
+            height: 262px;
+            position: absolute;
+            background: url('../../../assets/images/bodycheck/ind_人正面.png');
+
+            >div {
+              width: 22px;
+              height: 22px;
+              border-radius: 50%;
+              background-color: #f99;
+              border: 1px solid #cfd5e3;
+              position: absolute;
+              left: 0;
+              top: 0;
+
+              &.current {
+                background-color: #4c84ff;
+              }
+            }
+          }
+
+
+        }
+
+        .img-sep-box {
+          margin-top: 32px;
+          float: left;
+          width: 32px;
+          height: 245px;
+          padding: 0 8px;
+          line-height: 19px;
+          box-sizing: border-box;
+          vertical-align: middle;
+          border: 1px dashed #d9d9d9;
+          color: #a8acb8;
+        }
+
+        .img-right-box {
+          width: 158px;
+          height: 100%;
+          float: left;
+          padding-left: 24px;
+          padding-top: 30px;
+          box-sizing: border-box;
+
+          >.pimg-box-r {
+            width: 103px;
+            height: 262px;
+            position: absolute;
+            background: url('../../../assets/images/bodycheck/ind_人背面.png');
+          }
+        }
+      }
+
+      .re-box-sepline {
+        margin-top: 20px;
+        width: 1px;
+        height: 270px;
+        background-color: #cfd5e3;
+        float: left;
+      }
+
+      .re-box-right {
+        width: 636px;
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+        box-sizing: border-box;
+
+        ul {
+          float: left;
+          width: 596px;
+          width: 94%;
+          height: 100%;
+          position: relative;
+        }
+
+        ul li>input {
+          display: none;
+        }
+
+        ul li label {
+          float: left;
+          width: 90px;
+          width: 18.8%;
+          height: 26px;
+          line-height: 25px;
+          border-bottom: 1px solid transparent;
+          padding-right: 3%;
+          padding-left: 5%;
+          // padding: 0 17px 0 20px;
+          box-sizing: border-box;
+          cursor: pointer;
+          font-size: 14px;
+          transition: all .3s;
+          position: relative;
+
+          .del-inspect {
+            color: #a8acb8;
+            // float: right;
+            position: absolute;
+            right: 3%;
+            width: 15%;
+            height: 100%;
+            display: block;
+            font-size: 18px;
+          }
+        }
+
+        ul li input:checked+label {
+          color: #4C84FF;
+          border-bottom: 1px solid #4C84FF;
+        }
+
+        /* ul li:last-child label {
+            border-right: 1px solid #000;
+        } */
+
+        ul li .content {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          left: 0;
+          top: 26px;
+          width: 100%;
+          height: 235px;
+          border-top: 1px solid #cfd5e3;
+          box-sizing: border-box;
+          transition: all .3s;
+          padding-top: 20px;
+          padding-left: 36px;
+          padding-left: 6%;
+
+          >span {
+            display: block;
+            width: 56px;
+            font-size: 14px;
+            position: absolute;
+            left: 3%;
+
+            &.c-txt-ex {
+              top: 20px;
+            }
+
+            &.c-img-re {
+              top: 76px;
+            }
+          }
+
+          >input {
+            width: 422px;
+            width: 71%;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 16px;
+            outline: none;
+            border: 1px solid #cfd5e3;
+            position: absolute;
+            left: 22.8%;
+            top: 20px;
+            box-sizing: border-box;
+          }
+
+          >div {
+            position: absolute;
+            left: 137px;
+            left: 22.8%;
+            top: 76px;
+            width: 286px;
+            width: 65%;
+            height: 165px;
+          }
+
+        }
+
+        // ul li:nth-child(1) .content {
+        //   background-color: #f99;
+        // }
+
+        // ul li:nth-child(2) .content {
+        //   background-color: #ccc;
+        // }
+
+        // ul li:nth-child(3) .content {
+        //   background-color: skyblue;
+        // }
+
+        // ul li:nth-child(4) .content {
+        //   background-color: saddlebrown;
+        // }
+
+        // ul li:nth-child(5) .content {
+        //   background-color: mediumslateblue;
+        // }
+
+        ul li input:checked~.content {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+
+    input::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #a8acb8;
+    }
+
+    input:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #a8acb8;
+    }
+
+    input::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #a8acb8;
+    }
+
+    input:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: #a8acb8;
+    }
+  }
+}
+
+.info-end {
+  // height: 106px;
+  line-height: 106px;
+  position: absolute;
+  bottom: 18px;
+  right: 20%;
+  margin-right: 32px;
+
+  >button {
+    width: 124px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+
+    &.btn-ensure {
+      margin-right: 10px;
+      background-color: #457EFB;
+      // background-image: linear-gradient(#457EFB, #457EFB);#4c84ff
+      color: #fff;
+      box-shadow: 4px 4px 8px #4c84ff;
+    }
+
+    &.btn-reset {
+      background-color: #fff;
+      // border: 4px solid #dfe2e9;
+      line-height: 36px;
+      box-shadow: 4px 4px 8px #c9c0d4;
+    }
+  }
+}
+
+
+.info-end-tips {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  color: #a8acb8;
+
+  >span {
+    vertical-align: middle;
+    color: red;
+    font-family: '微软雅黑';
+    margin-right: 10px;
+  }
+}
+
+// 签字板
+.sign-main {
+  width: 1300px;
+  width: 100%;
+  height: 422px;
+  display: block;
+  margin-top: 18px;
+  padding-left: 8%;
+  box-sizing: border-box;
+
+  .sign-first-line,
+  .sign-second-line {
+    width: 100%;
+    height: 202px;
+    position: relative;
+    font-size: 14px;
+
+    span {
+      width: 56px;
+      position: absolute;
+      top: 0;
+    }
+
+    .info-tip {
+      width: 1%;
+      position: absolute;
+      left: -15px;
+      font-family: '微软雅黑';
+      font-size: 17px;
+      color: red;
+      vertical-align: middle;
+    }
+
+    .first-box-txt {
+      left: 1%;
+    }
+
+    .second-box-txt {
+      left: 48%;
+    }
+  
+
+    .sign-main-img {
+      width: 422px;
+      width: 33%;
+      height: 202px;
+      position: absolute;
+      top: 0;
+      border: 1px solid #cfd5e3;
+      box-sizing: border-box;
+      color: #a8acb8;
+
+      &.sign-main-left-first,
+      &.sign-main-left-third {
+        left: 9%;
+      }
+
+      &.sign-main-left-second {
+        left: 57%;
+      }
+
+      .sign-img-sign {
+        width: 295px;
+        width: 70%;
+        height: 100%;
+        border-right: 1px solid #cfd5e3;
+        box-sizing: border-box;
+        background: url('../../../assets/images/bodycheck/ind_签名.png') no-repeat 45% 45%;
+        // background-size: contain;
+        text-align: center;
+        float: left;
+        position: relative;
+
+        .model-overlay-sign {
+          position: absolute;
+          top: 0;
+          left: 148px;
+          left: 50%;
+          height: 100%;
+          width: 100%;
+          background-color: rgb(0, 0, 0, 0.5);
+          /*兼容rgb不可以用的浏览器*/
+          background-color: #000;
+          opacity: 0.5;
+          z-index: 10;
+          visibility: hidden;
+        }
+
+        .model-box-sign {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: auto;
+          width: 270px;
+          width: 91%;
+          height: 121px;
+          z-index: 11;
+          background-color: #fff;
+          box-sizing: border-box;
+          padding-bottom: 6px;
+          padding-left: 4px;
+          padding-right: 4px;
+          visibility: hidden;
+
+          img {
+            width: 80%;
+            height: 100%;
+          }
+        }
+
+        >p {
+          height: 34px;
+          text-align: center;
+          line-height: 34px;
+        }
+
+        >div {
+          width: 100%;
+          height: 33px;
+          line-height: 33px;
+          border-top: 1px solid #cfd5e3;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+      }
+
+      .sign-img-finger {
+        width: 124px;
+        width: 30%;
+        height: 100%;
+        background: url('../../../assets/images/bodycheck/ind_指纹.png') no-repeat 45% 45%;
+        text-align: center;
+        float: left;
+        position: relative;
+
+        .model-overlay-finger {
+          position: absolute;
+          top: 0;
+          left: 62px;
+          left: 50%;
+          height: 100%;
+          width: 100%;
+          background-color: rgb(0, 0, 0, 0.5);
+          /*兼容rgb不可以用的浏览器*/
+          background-color: #000;
+          opacity: 0.5;
+          z-index: 10;
+          visibility: hidden;
+        }
+
+        .model-box-finger {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          // height: auto;
+          width: 95px;
+          width: 76%;
+          height: 121px;
+          z-index: 11;
+          background-color: #fff;
+          box-sizing: border-box;
+          padding-bottom: 6px;
+          padding-left: 4px;
+          padding-right: 4px;
+          visibility: hidden;
+
+          img {
+            width: 80%;
+          }
+
+        }
+
+        >p {
+          height: 34px;
+          text-align: center;
+          line-height: 34px;
+        }
+
+        >div {
+          width: 100%;
+          height: 33px;
+          line-height: 33px;
+          border-top: 1px solid #cfd5e3;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+
+  .sign-second-line {
+    margin-top: 16px;
+  }
+
+}
+
+// 滚动条配置
+
+.body-checkinfo-agreement-box {
+  width: 1300px/ @totalW * 100%;
+  height: 422px;
+  position: absolute;
+  top: 208px;
+  overflow: hidden;
+}
+
+#body-checkinfo-content {
+  height: 422+422px;
+}
+
+#body-checkinfo-scroll-bar {
+  position: absolute;
+  width: 10px;
+  height: 360px;
+  right: 73px;
+  right: 8%;
+  top: 0px;
+  background-color: transparent;
+}
+
+#body-checkinfo-bar {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #adb0be;
+}
+
+@media screen and (max-width:1440px) {
+  .info-main .person-info .re-box .re-box-right ul li label {
+    font-size: 12px;
+  }
+
+  .info-main .person-info .re-box .re-box-right ul li .content>span {
+    font-size: 12px;
+  }
+}

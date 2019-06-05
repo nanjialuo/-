@@ -1,0 +1,509 @@
+body {
+  font-size: 12px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.todopro-page {
+  position: relative;
+  padding-left: 138px;
+  padding-top: 68px;
+  width: 1336px;
+  margin: 0 auto;
+}
+
+// 时间轴
+.todopro-timelist {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  .timelist {
+    padding-left: 30px;
+    padding-top: 35px;
+
+    li {
+      position: relative;
+      padding-left: 34px;
+      width: 108px;
+      height: 144px;
+      box-sizing: border-box;
+      border-left: 1px solid #DFE0E4;
+
+      &.first {
+        color: #515a6e;
+        padding-top: 0;
+        height: 78px;
+        margin-bottom: 0;
+        width: 200px;
+
+        .time-step {
+          left: -5px;
+          top: -5px;
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background-color: #BEC0C5;
+          border: none;
+        }
+
+        span {
+          top: -12px;
+          width: 100%;
+        }
+      }
+
+      .time-step {
+        position: absolute;
+        left: -12px;
+        top: -12px;
+        width: 23px;
+        height: 23px;
+        line-height: 23px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #808695;
+        border: 1px solid #DFE0E4;
+      }
+
+      span {
+        position: relative;
+        top: -14px;
+        line-height: 24px;
+        display: block;
+
+        &.name {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.todopro-user {
+  width: 100%;
+
+  .user-detailpro {
+    width: 114*7+144+252px;
+
+    >li {
+      height: 114px;
+      margin-bottom: 25px;
+      border: 1px solid #dadbe4;
+      position: relative;
+
+      // 人员信息
+      .userInfo {
+        width: 252px;
+        height: 114px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: 1px solid #dadbe4;
+        float: left;
+        position: relative;
+
+        .userImg {
+          margin: 20px 16px 0 32px;
+          float: left;
+        }
+
+        .userDetail {
+          margin-top: 35px;
+
+          p {
+            height: 25px;
+          }
+
+          span {
+            color: #808695;
+            font-size: 12px;
+          }
+        }
+
+        .detailInfo {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          right: 12px;
+          top: 12px;
+        }
+      }
+
+      // 流程列表
+      .userPro {
+        margin-left: 252px;
+        height: 114px;
+        position: relative;
+
+        li {
+          position: absolute;
+          top: 0;
+          width: 142px;
+
+          &:nth-child(1) {
+            left: 0px;
+
+            .left {
+              background-color: #fff;
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #fff;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            left: 114px;
+
+            .left {
+              background-color: #5675e8;
+
+              >div {
+                background: url('../../assets/images/todo_process/menu_人身检查_s.png');
+              }
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #5675e8;
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            color: #fff;
+            left: 228px;
+
+            .left {
+              background-color: #5278f6;
+
+              >div {
+                background: url('../../assets/images/todo_process/menu_随身财物_s.png');
+              }
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #5278f6;
+              }
+            }
+          }
+
+          &:nth-child(4) {
+            left: 114 * 3px;
+
+            .left {
+              background-color: #507df6;
+
+              >div {
+                background: url('../../assets/images/todo_process/menu_信息采集_s.png');
+              }
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #507df6;
+              }
+            }
+          }
+
+          &:nth-child(5) {
+            left: 114 * 4px;
+
+            .left {
+              background-color: #4d84f7;
+
+              >div {
+                background: url('../../assets/images/todo_process/menu_吸毒检测_s.png');
+              }
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #4d84f7;
+              }
+            }
+          }
+
+          &:nth-child(6) {
+            left: 114 * 5px;
+
+            .left {
+              background-color: #4a89f7;
+
+              >div {
+                background: url('../../assets/images/todo_process/menu_侯问管理_s.png');
+              }
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #4a89f7;
+              }
+            }
+          }
+
+          &:nth-child(7) {
+            left: 114 * 6px;
+
+            .left {
+              background-color: #458ef6;
+
+              >div {
+                background: url('../../assets/images/todo_process/menu_财物返还_s.png');
+              }
+            }
+
+            .right {
+              border-left: 28px solid #fff;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #458ef6;
+              }
+            }
+          }
+
+          // &:nth-child(8) {
+          //   width: 144px;
+          //   left: 114*7px;
+          //   height: 114px;
+          //   box-sizing: border-box;
+
+          //   .endTop,
+          //   .endBottom {
+          //     height: 50%;
+          //     line-height: 57px;
+          //     background-color: #5472f3;
+          //     padding-left: 68px;
+          //     position: relative;
+          //     box-sizing: border-box;
+
+          //     >img {
+          //       position: absolute;
+          //       left: 38px;
+          //       top: 18px;
+          //     }
+          //   }
+
+          //   .endTop {
+          //     background-color: #4492f7;
+          //     border-bottom: 1px solid #fff;
+          //   }
+          // }
+
+          &:nth-child(8),
+          &:nth-child(9) {
+            box-sizing: border-box;
+
+            .left {
+              width: 144px;
+              left: 114*7px;
+              box-sizing: border-box;
+              height: 57px;
+              background-color: #5472f3;
+              position: relative;
+              padding: 0;
+              border-bottom: 1px solid #fff;
+
+              >div {
+                position: absolute;
+                left: -23px;
+                top: 18px;
+                background: url('../../assets/images/todo_process/step_临时出区.png');
+              }
+
+              >p {
+                position: absolute;
+                right: 22px;
+                top: 16px;
+              }
+
+            }
+
+            .right {
+              width: 0;
+            }
+
+
+            // .endTop,
+            // .endBottom {
+            //   height: 50%;
+            //   line-height: 57px;
+            //   background-color: #5472f3;
+            //   padding-left: 68px;
+            //   position: relative;
+            //   box-sizing: border-box;
+
+            //   >img {
+            //     position: absolute;
+            //     left: 38px;
+            //     top: 18px;
+            //   }
+            // }
+
+            // .endTop {
+            //   background-color: #4492f7;
+            //   border-bottom: 1px solid #fff;
+            // }
+          }
+
+          &:nth-child(9) {
+            top: 50%;
+            border-bottom: none;
+
+            >div {
+              background: url('../../assets/images/todo_process/step_最终出区.png');
+            }
+          }
+
+          >a {
+            color: #fff;
+          }
+
+          .left {
+            width: 114px;
+            height: 114px;
+            border: 1px solid #dadbe4;
+            box-sizing: border-box;
+            border-right: none;
+            margin-right: 28px;
+            padding: 34px 0 40px 0px;
+
+            >div {
+              width: 18px;
+              height: 18px;
+              margin-left: 56px;
+              margin-bottom: 8px;
+            }
+
+            >p {
+              margin-left: 36px;
+            }
+          }
+
+          .right {
+            width: 0;
+            height: 0;
+            border-bottom: 57px solid transparent;
+            border-top: 57px solid transparent;
+            float: right;
+            position: relative;
+
+            span {
+              display: block;
+              width: 0;
+              height: 0;
+              border-bottom: 55px solid transparent;
+              border-top: 55px solid transparent;
+              position: absolute;
+              left: -28px;
+              top: -55px;
+            }
+          }
+
+          &.proDone {
+            .left {
+              background-color: #fff;
+
+              >div {
+                background: url('../../assets/images/todo_process/step_已完成.png');
+              }
+            }
+
+            >a {
+              color: #34a80b;
+            }
+
+            .right {
+              border-left: 28px solid #DADBE4;
+              z-index: 1;
+
+              span {
+                z-index: 1;
+                border-left: 27px solid #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 滚动条配置
+.agreement-box {
+  position: relative;
+  // width: 100%;
+  // padding-right: 40px;
+  overflow: hidden;
+}
+
+#todopro-scroll-bar {
+  position: absolute;
+  width: 4px;
+  right: 0px;
+  top: 68px;
+  background-color: transparent;
+}
+
+#todopro-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #ADB0BE;
+}
+
+@media screen and (max-width:1440px) {
+  .userInfo {
+    display: none;
+  }
+
+  .todopro-user .user-detailpro {
+    width: 942px;
+  }
+
+  .todopro-user .user-detailpro>li .userPro {
+    margin-left: 0;
+  }
+
+  .todopro-timelist .timelist li span.name {
+    display: block;
+  }
+
+  .todopro-timelist .timelist li span {
+    top: -25px;
+  }
+}

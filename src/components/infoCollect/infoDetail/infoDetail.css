@@ -1,0 +1,456 @@
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+}
+.infod-title {
+  position: absolute;
+  left: 30px;
+  top: 26px;
+  color: #515a6e;
+}
+.infod-main {
+  width: 79.46210269%;
+  width: 100%;
+  height: 422px;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding-left: 8%;
+  box-sizing: border-box;
+}
+.infod-main .person-info {
+  height: 80%;
+}
+.infod-main .person-info .p-first-line,
+.infod-main .person-info .p-second-line,
+.infod-main .person-info .p-third-line,
+.infod-main .person-info .p-fourth-line,
+.infod-main .person-info .p-last-line {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  font-size: 14px;
+}
+.infod-main .person-info .p-first-line span,
+.infod-main .person-info .p-second-line span,
+.infod-main .person-info .p-third-line span,
+.infod-main .person-info .p-fourth-line span,
+.infod-main .person-info .p-last-line span {
+  width: 56px;
+  position: absolute;
+  top: 0;
+}
+.infod-main .person-info .p-first-line .collect-txt,
+.infod-main .person-info .p-second-line .collect-txt,
+.infod-main .person-info .p-third-line .collect-txt,
+.infod-main .person-info .p-fourth-line .collect-txt,
+.infod-main .person-info .p-last-line .collect-txt,
+.infod-main .person-info .p-first-line .basic-info,
+.infod-main .person-info .p-second-line .basic-info,
+.infod-main .person-info .p-third-line .basic-info,
+.infod-main .person-info .p-fourth-line .basic-info,
+.infod-main .person-info .p-last-line .basic-info,
+.infod-main .person-info .p-first-line .pname,
+.infod-main .person-info .p-second-line .pname,
+.infod-main .person-info .p-third-line .pname,
+.infod-main .person-info .p-fourth-line .pname,
+.infod-main .person-info .p-last-line .pname {
+  left: 1%;
+}
+.infod-main .person-info .p-first-line > input,
+.infod-main .person-info .p-second-line > input,
+.infod-main .person-info .p-third-line > input,
+.infod-main .person-info .p-fourth-line > input,
+.infod-main .person-info .p-last-line > input {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  border: 1px solid #cfd5e3;
+  padding: 0 1%;
+  box-sizing: border-box;
+}
+.infod-main .person-info .p-first-line #pname,
+.infod-main .person-info .p-second-line #pname,
+.infod-main .person-info .p-third-line #pname,
+.infod-main .person-info .p-fourth-line #pname,
+.infod-main .person-info .p-last-line #pname {
+  left: 9%;
+  background-color: #f5f6fa;
+}
+.infod-main .person-info .p-first-line .pnumber,
+.infod-main .person-info .p-second-line .pnumber,
+.infod-main .person-info .p-third-line .pnumber,
+.infod-main .person-info .p-fourth-line .pnumber,
+.infod-main .person-info .p-last-line .pnumber {
+  left: 48%;
+}
+.infod-main .person-info .p-first-line #pnumber,
+.infod-main .person-info .p-second-line #pnumber,
+.infod-main .person-info .p-third-line #pnumber,
+.infod-main .person-info .p-fourth-line #pnumber,
+.infod-main .person-info .p-last-line #pnumber {
+  left: 57%;
+  background-color: #f5f6fa;
+}
+.infod-main .person-info .sep-line {
+  height: 16px;
+}
+.infod-main .person-info .p-second-line {
+  height: 340px;
+  box-sizing: border-box;
+}
+.infod-main .person-info .p-second-line .basic-info-box {
+  width: 996px;
+  width: 81%;
+  border: 1px solid #cfd5e3;
+  position: absolute;
+  left: 9%;
+  box-sizing: border-box;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list {
+  width: 100%;
+  position: relative;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li {
+  width: 100%;
+  height: 58px;
+  line-height: 58px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cfd5e3;
+  position: relative;
+  text-align: center;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) > .infod-rl-pc,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) > .infod-rl-pc,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) .infod-resultr-pc,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) .infod-resultr-pc {
+  width: 10%;
+  position: absolute;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) > .infod-rl-pc > input,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) > .infod-rl-pc > input,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) .infod-resultr-pc > input,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) .infod-resultr-pc > input {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) .infod-rl-pc,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) .infod-rl-pc {
+  left: 19.5%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) .infod-resultr-pc,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) .infod-resultr-pc {
+  left: 32.7%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) .sep-span,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) .sep-span {
+  width: 8px;
+  height: 1px;
+  position: absolute;
+  left: 30.8%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(5) > span,
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(6) > span {
+  width: 13.5%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > p {
+  position: absolute;
+  width: 6%;
+  left: 5.8%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > p.normal-value {
+  display: block;
+  text-align: center;
+  left: 89.9%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > input {
+  width: 23.1%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > input.info-result {
+  left: 19.5%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > input.info-des {
+  left: 59.2%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > .infod-second-pc {
+  width: 23.1%;
+  position: absolute;
+  left: 59.2%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > .infod-second-pc > input {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li > span {
+  display: block;
+  width: 8%;
+  position: absolute;
+  left: 43.6%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(1) {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f5f6fa;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(1) > div {
+  position: absolute;
+  top: 0;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(1) > div:nth-child(1) {
+  left: 40px;
+  left: 6.1%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(1) > div:nth-child(2) {
+  left: 132px;
+  left: 28.2%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(1) > div:nth-child(3) {
+  left: 226px;
+  left: 67.8%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:nth-child(1) > div:nth-child(4) {
+  left: 320px;
+  left: 88.4%;
+}
+.infod-main .person-info .p-second-line .basic-info-box .basic-info-list > li:last-child {
+  border-bottom: none;
+}
+.infod-main .person-info .p-third-line {
+  height: 188px;
+  box-sizing: border-box;
+}
+.infod-main .person-info .p-third-line .collect-detail {
+  width: 996px;
+  width: 81%;
+  border: 1px solid #cfd5e3;
+  position: absolute;
+  left: 9%;
+  padding-left: 3%;
+  box-sizing: border-box;
+  height: 188px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > input {
+  height: 40px;
+  width: 32%;
+  background-color: #f5f6fa;
+  outline: none;
+  border: 1px solid #cfd5e3;
+  box-sizing: border-box;
+  position: absolute;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > input.finger-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.hand-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.feet-in {
+  left: 15.7%;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > input.blood-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.acho-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.other-in {
+  left: 65.3%;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > input.finger-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.blood-in {
+  top: 22px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > input.hand-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.acho-in {
+  top: 72px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > input.feet-in,
+.infod-main .person-info .p-third-line .collect-detail > form > input.other-in {
+  top: 122px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form > .sep-line {
+  height: 10px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label {
+  display: block;
+  width: 12.5%;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  left: 3%;
+  top: 22px;
+  box-sizing: border-box;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label.blood {
+  left: 52.8%;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label.hand {
+  top: 72px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label.acho {
+  top: 72px;
+  left: 52.8%;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label.feet {
+  top: 123px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label.other {
+  top: 123px;
+  left: 52.8%;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label > input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label > input[type="checkbox"]:after {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  content: " ";
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #cfd5e3;
+  box-sizing: border-box;
+  padding: 0px 3px;
+  border-radius: 3px;
+}
+.infod-main .person-info .p-third-line .collect-detail > form label > input[type="checkbox"]:checked:after {
+  content: "✓";
+  font-size: 12px;
+}
+.infod-main .person-info .p-fourth-line,
+.infod-main .person-info .p-last-line {
+  height: 25px;
+  line-height: 25px;
+}
+.infod-main .person-info .p-fourth-line .info-db,
+.infod-main .person-info .p-last-line .info-db,
+.infod-main .person-info .p-fourth-line .ver-compar,
+.infod-main .person-info .p-last-line .ver-compar {
+  position: absolute;
+  left: 9%;
+}
+.infod-main .person-info .sep-line-last {
+  height: 18px;
+}
+.infod-main .person-info input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #a8acb8;
+}
+.infod-main .person-info input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a8acb8;
+}
+.infod-main .person-info input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a8acb8;
+}
+.infod-main .person-info input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #a8acb8;
+}
+.info-end {
+  line-height: 106px;
+  position: absolute;
+  bottom: 18px;
+  right: 20%;
+  margin-right: 32px;
+}
+.info-end > button {
+  width: 124px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.info-end > button.btn-ensure {
+  margin-right: 10px;
+  background-color: #457EFB;
+  box-shadow: 4px 4px 8px #4c84ff;
+  color: #fff;
+}
+.info-end > button.btn-reset,
+.info-end > button.btn-skip {
+  background-color: #fff;
+  line-height: 36px;
+  box-shadow: 4px 4px 8px #c9c0d4;
+}
+.info-end > button.btn-skip {
+  margin-right: 10px;
+}
+.info-end-tips {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  color: #a8acb8;
+}
+.info-end-tips > span {
+  vertical-align: middle;
+  color: red;
+  font-family: '微软雅黑';
+  margin-right: 10px;
+}
+.body-checkinfo-agreement-box {
+  width: 79.46210269%;
+  height: 422px;
+  position: absolute;
+  top: 208px;
+  overflow: hidden;
+}
+#body-checkinfo-content {
+  height: 844px;
+}
+#body-checkinfo-scroll-bar {
+  position: absolute;
+  width: 10px;
+  height: 300px;
+  right: 73px;
+  right: 8%;
+  top: 0px;
+  background-color: transparent;
+}
+#body-checkinfo-bar {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #adb0be;
+}
+@media screen and (max-width: 1440px) {
+  div,
+  p,
+  ul,
+  li,
+  input,
+  select,
+  a {
+    font-size: 12px;
+  }
+  .info-main .person-info .plistdetail .owns-list-detail > li > .goodslistop > a {
+    font-size: 12px;
+  }
+}

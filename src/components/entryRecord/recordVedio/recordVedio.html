@@ -1,0 +1,63 @@
+<div class="mainbody">
+  <div class="recordvedio-title">
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+      <el-breadcrumb-item :to="{ path: '/entry' }">入区记录</el-breadcrumb-item>
+      <el-breadcrumb-item>轨迹录像</el-breadcrumb-item>
+    </el-breadcrumb>
+    <p><span>{{name}}</span> <span>({{wristbandNum}})</span></p>
+  </div>
+  <div class="recordvedio-main">
+    <div class="recordvedio-main-left">
+      <ul>
+        <li>
+          <div>序号</div>
+          <div>区域</div>
+          <div>进入时间</div>
+          <div>离开时间</div>
+        </li>
+        <li class="currentShow" @click="currentShow($event)">
+          <div>1</div>
+          <div>大门</div>
+          <div>2019/1/11 10:05:01</div>
+          <div>2019/1/11 10:08:06</div>
+          <div class="recordvedio-btn"></div>
+        </li>
+        <li @click="currentShow($event)">
+          <div>2</div>
+          <div>走廊</div>
+          <div>2019/1/11 10:05:01</div>
+          <div>2019/1/11 10:08:06</div>
+          <div class="recordvedio-btn"></div>
+        </li>
+        <li @click="currentShow($event)">
+          <div>3</div>
+          <div>1楼</div>
+          <div>2019/1/11 10:05:01</div>
+          <div>2019/1/11 10:08:06</div>
+          <div class="recordvedio-btn"></div>
+        </li>
+        <li @click="currentShow($event)">
+          <div>4</div>
+          <div>2楼</div>
+          <div>2019/1/11 10:05:01</div>
+          <div>2019/1/11 10:08:06</div>
+          <div class="recordvedio-btn"></div>
+        </li>
+        <li @click="currentShow($event)">
+          <div>5</div>
+          <div>3楼</div>
+          <div>2019/1/11 10:05:01</div>
+          <div>2019/1/11 10:08:06</div>
+          <div class="recordvedio-btn"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="recordvedio-main-right"></div>
+  </div>
+
+  <!-- 底部按钮 -->
+  <div class="info-end">
+    <button class="btn-ensure">全部下载</button>
+    <button class="btn-reset" @click="$router.back(-1)">取消</button>
+  </div>
+</div>

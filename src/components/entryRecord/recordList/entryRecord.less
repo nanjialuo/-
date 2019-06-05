@@ -1,0 +1,154 @@
+@totalW: 1634px;
+
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
+  border: 1px solid #dadbe4;
+}
+
+.entry-record-title {
+  position: absolute;
+  left: 30px;
+  top: 33px;
+  color: #515a6e;
+}
+
+.entry-record-main {
+  width: 100%;
+  // height: 422px;
+  height: 645px;
+  top: 76px;
+  position: relative;
+  box-sizing: border-box;
+
+  .table-sort {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 16px;
+    // border: 1px solid #cfd5e3;
+    box-sizing: border-box;
+
+    .loc-sort,
+    .pe-sort,
+    .time-sort {
+      float: left;
+      width: 253px;
+      height: 32px;
+      // border: 1px solid #cfd5e3;
+      border-right: none;
+      margin-right: 12px;
+
+      >li {
+        width: 84px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 14px;
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid #cfd5e3;
+        cursor: pointer;
+        border-right: none;
+
+        &:last-child {
+          border-right: 1px solid #cfd5e3;
+        }
+
+        &:hover {
+          border: 1px solid #4f7efb;
+          color: #4f7efb;
+        }
+
+        &.currentSort {
+          border: 1px solid #4f7efb;
+          color: #4f7efb;
+        }
+      }
+    }
+
+    .time-sort {
+      width: 243px;
+      height: 32px;
+      float: left;
+      // border: 1px solid #cfd5e3;
+      border-right: none;
+
+      > li {
+        width: 56px;
+        &:last-child {
+          width: 74px;
+        }
+      }
+    }
+
+    >.record-search {
+      width: 15.6%;
+      height: 32px;
+      position: relative;
+      float: right;
+      input {
+        width: 100%;
+        height: 32px;
+        padding-left: 2.5%;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #cfd5e3;
+        color: #bbbec7;      
+      }
+
+      .search-btn {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 2.5%;
+        top: 7px;
+        background: url('../../../assets/images/bodycheck/btn_输入框搜索.png');
+      }
+  
+    }
+    > button {
+      width: 4%;
+      height: 32px;
+      background-color: #fff;
+      outline: none;
+      border: 1px solid #cfd5e3;
+      float: right;
+      margin-left: 10px;
+    }
+  }
+
+  .entry-record-table {
+    border: 1px solid #cfd5e3;
+    width: 100%;
+    height: 597px;
+    overflow: hidden;
+    position: relative;
+
+    .el-table .cell > a {
+      color: #4f7efb;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .table-pagenation {
+    height: 30px;
+    // width: 100%;
+    display: block;
+    position: absolute;
+    right: 2%;
+    bottom: 14px;
+  }
+}
+
+@media screen and (max-width:1440px) {
+
+  // .entry-record-main .entry-record-table .table-list li {
+  //   font-size: 12px;
+  // }
+}

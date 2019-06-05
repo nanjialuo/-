@@ -1,0 +1,211 @@
+@totalW: 778+858px;
+
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
+  border: 1px solid #dadbe4;
+}
+
+.recordtable-title {
+  // position: absolute;
+  // left: 30px;
+  // top: 33px;
+  width: 100%;
+  height: 76px;
+  position: relative;
+  // padding-left: 30px;
+  padding-top: 26px;
+  color: #515a6e;
+  box-sizing: border-box;
+
+  .el-breadcrumb {
+    float: left;
+  }
+
+  >p {
+    float: left;
+    line-height: 14px;
+    margin-left: 15px;
+    color: #cfd5e3;
+  }
+}
+
+.recordtable-main {
+  width: 100%;
+  height: 570px;
+  // top: 76px;
+  position: relative;
+  box-sizing: border-box;
+
+  >ul>li {
+    >input {
+      display: none;
+
+      &:checked+label {
+        color: #4C84FF;
+        border-bottom: 1px solid #4C84FF;
+      }
+
+      &:checked~.content {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+
+    >label {
+      float: left;
+      width: 175px;
+      line-height: 32px;
+      border-bottom: 1px solid transparent;
+      /* padding: 0 17px 0 20px; */
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: all .3s;
+      color: #000;
+      text-align: center;
+    }
+
+    >.content {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      top: 33px;
+      width: 100%;
+      // height: 100%;
+      height: 900px;
+      height: 537px;
+      border-top: 1px solid #cfd5e3;
+      box-sizing: border-box;
+      transition: all .3s;
+
+      .recordtable-table {
+        width: 100%;
+        height: 900px;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  // 滚动条配置
+  .recordtable-agreement-box {
+    // position: relative;
+    overflow: hidden;
+  }
+
+  #recordtable-scroll-bar,
+  #recordtable-scroll-bar1 {
+    position: absolute;
+    width: 4px;
+    height: 900px;
+    right: 0;
+    top: 33px;
+    background-color: transparent;
+  }
+
+  #recordtable-bar,
+  #recordtable-bar1 {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 4px;
+    height: 114px;
+    border-radius: 2.5px;
+    background-color: #adb0be;
+  }
+}
+
+.info-end {
+  line-height: 106px;
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+  margin-right: 32px;
+
+  >button {
+    width: 124px;
+    height: 40px;
+    vertical-align: bottom;
+    border-radius: 20px;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+
+    &.btn-ensure {
+      margin-right: 10px;
+      background-color: #457EFB;
+      // background-image: linear-gradient(#457EFB, #457EFB);#4c84ff
+      color: #fff;
+      box-shadow: 4px 4px 8px #4c84ff;
+    }
+
+    &.btn-reset,
+    &.btn-skip {
+      background-color: #fff;
+      // border: 4px solid #dfe2e9;
+      line-height: 36px;
+      box-shadow: 4px 4px 8px #c9c0d4;
+    }
+
+    &.btn-skip {
+      margin-right: 10px;
+    }
+  }
+}
+
+// @media screen and (max-width:1440px) {
+
+//   .askroom-main .askroom-detail>li>.content .greeting-room-list>li>.video-bg .vedio-btn[data-v-38bc3459],
+//   .askroom-main .askroom-detail>li>.content .asking-room-list>li>.video-bg .vedio-btn {
+//     width: 26px;
+//     height: 26px;
+//     background: url('../../assets/images/askroom/btn_查看视频s.png');
+
+//     &:hover {
+//       background: url('../../assets/images/askroom/btn_查看视频shover.png');
+//     }
+//   }
+// }
+
+ul li {
+  list-style: none;
+}
+
+.textbox {
+  border: none;
+}
+
+#imgboxmessage {
+  float: left;
+  text-align: left;
+  margin-top: 0;
+  font-family: 微软雅黑;
+}
+
+.pointbox {
+  position: absolute;
+}
+
+.point-box img {
+  position: relative;
+}
+
+.point {
+  position: relative;
+  top: -20px;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+}
+
+.imgbox {
+  width: 232px;
+  height: 308px;
+}
+
+.dg1_box .panel {
+  text-align: center;
+}

@@ -1,0 +1,373 @@
+body {
+  font-size: 12px;
+}
+ul li {
+  list-style: none;
+}
+.todopro-page {
+  position: relative;
+  padding-left: 138px;
+  padding-top: 68px;
+  width: 1336px;
+  margin: 0 auto;
+}
+.todopro-timelist {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.todopro-timelist .timelist {
+  padding-left: 30px;
+  padding-top: 35px;
+}
+.todopro-timelist .timelist li {
+  position: relative;
+  padding-left: 34px;
+  width: 108px;
+  height: 144px;
+  box-sizing: border-box;
+  border-left: 1px solid #DFE0E4;
+}
+.todopro-timelist .timelist li.first {
+  color: #515a6e;
+  padding-top: 0;
+  height: 78px;
+  margin-bottom: 0;
+  width: 200px;
+}
+.todopro-timelist .timelist li.first .time-step {
+  left: -5px;
+  top: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #BEC0C5;
+  border: none;
+}
+.todopro-timelist .timelist li.first span {
+  top: -12px;
+  width: 100%;
+}
+.todopro-timelist .timelist li .time-step {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #808695;
+  border: 1px solid #DFE0E4;
+}
+.todopro-timelist .timelist li span {
+  position: relative;
+  top: -14px;
+  line-height: 24px;
+  display: block;
+}
+.todopro-timelist .timelist li span.name {
+  display: none;
+}
+.todopro-user {
+  width: 100%;
+}
+.todopro-user .user-detailpro {
+  width: 1194px;
+}
+.todopro-user .user-detailpro > li {
+  height: 114px;
+  margin-bottom: 25px;
+  border: 1px solid #dadbe4;
+  position: relative;
+}
+.todopro-user .user-detailpro > li .userInfo {
+  width: 252px;
+  height: 114px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dadbe4;
+  float: left;
+  position: relative;
+}
+.todopro-user .user-detailpro > li .userInfo .userImg {
+  margin: 20px 16px 0 32px;
+  float: left;
+}
+.todopro-user .user-detailpro > li .userInfo .userDetail {
+  margin-top: 35px;
+}
+.todopro-user .user-detailpro > li .userInfo .userDetail p {
+  height: 25px;
+}
+.todopro-user .user-detailpro > li .userInfo .userDetail span {
+  color: #808695;
+  font-size: 12px;
+}
+.todopro-user .user-detailpro > li .userInfo .detailInfo {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.todopro-user .user-detailpro > li .userPro {
+  margin-left: 252px;
+  height: 114px;
+  position: relative;
+}
+.todopro-user .user-detailpro > li .userPro li {
+  position: absolute;
+  top: 0;
+  width: 142px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(1) {
+  left: 0px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(1) .left {
+  background-color: #fff;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(1) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(1) .right span {
+  z-index: 1;
+  border-left: 27px solid #fff;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(2) {
+  left: 114px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(2) .left {
+  background-color: #5675e8;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(2) .left > div {
+  background: url('../../assets/images/todo_process/menu_人身检查_s.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(2) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(2) .right span {
+  z-index: 1;
+  border-left: 27px solid #5675e8;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(3) {
+  color: #fff;
+  left: 228px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(3) .left {
+  background-color: #5278f6;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(3) .left > div {
+  background: url('../../assets/images/todo_process/menu_随身财物_s.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(3) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(3) .right span {
+  z-index: 1;
+  border-left: 27px solid #5278f6;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(4) {
+  left: 342px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(4) .left {
+  background-color: #507df6;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(4) .left > div {
+  background: url('../../assets/images/todo_process/menu_信息采集_s.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(4) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(4) .right span {
+  z-index: 1;
+  border-left: 27px solid #507df6;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(5) {
+  left: 456px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(5) .left {
+  background-color: #4d84f7;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(5) .left > div {
+  background: url('../../assets/images/todo_process/menu_吸毒检测_s.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(5) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(5) .right span {
+  z-index: 1;
+  border-left: 27px solid #4d84f7;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(6) {
+  left: 570px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(6) .left {
+  background-color: #4a89f7;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(6) .left > div {
+  background: url('../../assets/images/todo_process/menu_侯问管理_s.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(6) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(6) .right span {
+  z-index: 1;
+  border-left: 27px solid #4a89f7;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(7) {
+  left: 684px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(7) .left {
+  background-color: #458ef6;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(7) .left > div {
+  background: url('../../assets/images/todo_process/menu_财物返还_s.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(7) .right {
+  border-left: 28px solid #fff;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(7) .right span {
+  z-index: 1;
+  border-left: 27px solid #458ef6;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(8),
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) {
+  box-sizing: border-box;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(8) .left,
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) .left {
+  width: 144px;
+  left: 798px;
+  box-sizing: border-box;
+  height: 57px;
+  background-color: #5472f3;
+  position: relative;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(8) .left > div,
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) .left > div {
+  position: absolute;
+  left: -23px;
+  top: 18px;
+  background: url('../../assets/images/todo_process/step_临时出区.png');
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(8) .left > p,
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) .left > p {
+  position: absolute;
+  right: 22px;
+  top: 16px;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(8) .right,
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) .right {
+  width: 0;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) {
+  top: 50%;
+  border-bottom: none;
+}
+.todopro-user .user-detailpro > li .userPro li:nth-child(9) > div {
+  background: url('../../assets/images/todo_process/step_最终出区.png');
+}
+.todopro-user .user-detailpro > li .userPro li > a {
+  color: #fff;
+}
+.todopro-user .user-detailpro > li .userPro li .left {
+  width: 114px;
+  height: 114px;
+  border: 1px solid #dadbe4;
+  box-sizing: border-box;
+  border-right: none;
+  margin-right: 28px;
+  padding: 34px 0 40px 0px;
+}
+.todopro-user .user-detailpro > li .userPro li .left > div {
+  width: 18px;
+  height: 18px;
+  margin-left: 56px;
+  margin-bottom: 8px;
+}
+.todopro-user .user-detailpro > li .userPro li .left > p {
+  margin-left: 36px;
+}
+.todopro-user .user-detailpro > li .userPro li .right {
+  width: 0;
+  height: 0;
+  border-bottom: 57px solid transparent;
+  border-top: 57px solid transparent;
+  float: right;
+  position: relative;
+}
+.todopro-user .user-detailpro > li .userPro li .right span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 55px solid transparent;
+  border-top: 55px solid transparent;
+  position: absolute;
+  left: -28px;
+  top: -55px;
+}
+.todopro-user .user-detailpro > li .userPro li.proDone .left {
+  background-color: #fff;
+}
+.todopro-user .user-detailpro > li .userPro li.proDone .left > div {
+  background: url('../../assets/images/todo_process/step_已完成.png');
+}
+.todopro-user .user-detailpro > li .userPro li.proDone > a {
+  color: #34a80b;
+}
+.todopro-user .user-detailpro > li .userPro li.proDone .right {
+  border-left: 28px solid #DADBE4;
+  z-index: 1;
+}
+.todopro-user .user-detailpro > li .userPro li.proDone .right span {
+  z-index: 1;
+  border-left: 27px solid #fff;
+}
+.agreement-box {
+  position: relative;
+  overflow: hidden;
+}
+#todopro-scroll-bar {
+  position: absolute;
+  width: 4px;
+  right: 0px;
+  top: 68px;
+  background-color: transparent;
+}
+#todopro-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 114px;
+  border-radius: 2.5px;
+  background-color: #ADB0BE;
+}
+@media screen and (max-width: 1440px) {
+  .userInfo {
+    display: none;
+  }
+  .todopro-user .user-detailpro {
+    width: 942px;
+  }
+  .todopro-user .user-detailpro > li .userPro {
+    margin-left: 0;
+  }
+  .todopro-timelist .timelist li span.name {
+    display: block;
+  }
+  .todopro-timelist .timelist li span {
+    top: -25px;
+  }
+}

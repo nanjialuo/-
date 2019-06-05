@@ -1,0 +1,112 @@
+<div class="mainbody">
+  <common-step></common-step>
+  <p class="ownfilling-title">财物返还</p>
+  <!-- 滚动条父盒子 -->
+  <div class="body-checkinfo-agreement-box" id="body-checkinfo-scroll">
+    <!-- 滚动内容 -->
+    <div id="body-checkinfo-content">
+      <div class="ownfilling-main">
+        <form action="" :model="pinfo" :rules="rules" ref="pinfo" class="person-info">
+          <div class="p-first-line">
+            <span class="pname">人员姓名</span>
+            <input type="text" id="pname" v-model="pinfo.name" disabled>
+            <span class="pnumber">腕带编号</span>
+            <input type="text" id="pnumber" v-model="pinfo.pnumber" disabled>
+          </div>
+          <div class="sep-line"></div>
+          <div class="p-second-line placeholder-box-left">
+            <span class="psavebox">
+              <span class="info-tip">*</span>存 储 箱
+            </span>
+            <input type="text" id="psavebox" v-model="pinfo.psavebox" value="B3" disabled>
+            <div class="openbox">开箱</div>
+          </div>
+          <div class="sep-line"></div>
+          <div class="p-third-line" ref="pthirdline">
+            <span class="pownslist">财物列表</span>
+            <div class="plistdetail" ref="ownslistdetail">
+              <el-table :header-cell-style="{background:'#f5f6fa',color:'#606266'}" :data="ownsList"
+                style="width: 100%">
+                <el-table-column prop="goodsid" label="编号" align="center">
+                </el-table-column>
+                <el-table-column prop="goodsname" label="名称" align="center">
+                </el-table-column>
+                <el-table-column prop="goodscount" label="数量" align="center">
+                </el-table-column>
+                <el-table-column prop="goodsunit" label="单位" align="center">
+                </el-table-column>
+                <el-table-column prop="goodsbox" label="保管措施" align="center">
+                </el-table-column>
+                <el-table-column prop="goodslevel" label="业务等级" align="center">
+                </el-table-column>
+                <el-table-column prop="goodsdes" label="描述" align="center">
+                </el-table-column>
+                <el-table-column prop="goodsimg" label="照片" align="center">
+                </el-table-column>
+              </el-table>
+            </div>
+          </div>
+          <div class="sep-line"></div>
+          <!-- 抓拍 -->
+          <div class="p-catch-line">
+            <span class="pcatchall"><span class="info-tip">*</span>全局抓拍</span>
+            <div id="detectCatch">
+              <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
+                :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess">
+                <img v-if="imageUrl" :src="imageUrl" class="avatar">
+                <div class="upload-btn">
+                  <div class="sta-show"></div>
+                  <div class="hover-show">
+                    <div>抓拍</div>
+                    <div class="avatar-uploader-icon">上传</div>
+                  </div>
+                </div>
+              </el-upload>
+              <div class="delete-img" @click.self="deleteUploadImg('#detectCatch')"></div>
+            </div>
+          </div>
+          <!-- 签名 -->
+          <div class="sign-second-line">
+            <span class="first-box-txt"><span class="info-tip">*</span> 检 查 人</span>
+            <div class="sign-main-img sign-main-left-third">
+              <div class="sign-img-sign"
+                @click="clickShow('.sign-main-left-third .model-box-sign','.sign-main-left-third .model-overlay-sign')"
+                @dblclick="clickHide('.sign-main-left-third .model-box-sign','.sign-main-left-third .model-overlay-sign')">
+                <p>签名</p>
+                <div>手写签名</div>
+                <!--模态框盒子-->
+                <div class="model-box-sign" id="mymodel-sign">
+                  <img src="../../../assets/images/bodycheck/ind_签名.png" alt="">
+                </div>
+                <div class="model-overlay-sign"></div>
+              </div>
+              <div class="sign-img-finger"
+                @click="clickShow('.sign-main-left-third .model-box-finger','.sign-main-left-third .model-overlay-finger')"
+                @dblclick="clickHide('.sign-main-left-third .model-box-finger','.sign-main-left-third .model-overlay-finger')">
+                <p>指纹</p>
+                <div>识别</div>
+                <!--模态框盒子-->
+                <div class="model-box-finger" id="mymodel-finger">
+                  <img src="../../../assets/images/bodycheck/ind_指纹.png" alt="">
+                </div>
+                <div class="model-overlay-finger"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 滚动条 -->
+    <div id="body-checkinfo-scroll-bar">
+      <div id="body-checkinfo-bar"></div>
+    </div>
+  </div>
+  <div class="info-end">
+    <button class="btn-skip">跳过</button>
+    <button class="btn-ensure" @click="$router.push('/check')">提交</button>
+    <button class="btn-reset" @click="$router.back(-1)">取消</button>
+  </div>
+  <div class="info-end-tips">
+    <span>*</span>为必填项
+  </div>
+</div>

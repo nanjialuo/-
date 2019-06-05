@@ -1,0 +1,195 @@
+@totalW: 778+858px;
+
+.mainbody {
+  height: 754px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
+  border: 1px solid #dadbe4;
+}
+
+.recordvedio-title {
+  // position: absolute;
+  // left: 30px;
+  // top: 33px;
+  width: 100%;
+  height: 76px;
+  position: relative;
+  // padding-left: 30px;
+  padding-top: 26px;
+  color: #a8acb8;
+  box-sizing: border-box;
+
+  .el-breadcrumb {
+    float: left;
+  }
+
+  >p {
+    float: left;
+    line-height: 14px;
+    margin-left: 15px;
+    color: #cfd5e3;
+  }
+}
+
+.recordvedio-main {
+  width: 100%;
+  height: 570px;
+  padding-top: 33px;
+  position: relative;
+  padding-left: 660px;
+  // top: 76px;
+  box-sizing: border-box;
+
+  .recordvedio-main-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 640px;
+    height: 100%;
+    margin-right: 20px;
+
+    ul {
+      li {
+        width: 100%;
+        height: 66px;
+        line-height: 66px;
+        border: 1px solid #dadbe4;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        position: relative;
+
+        &:hover,
+        &.currentShow {
+          border: 1px solid #bbd0ff;
+          color:#bbd0ff;
+          box-shadow: 1px 1px 7px #4c84ff;
+
+          .recordvedio-btn {
+            display: block;
+          }
+        }
+
+        .recordvedio-btn {
+          width: 26px;
+          height: 26px;
+          background: url('../../../assets/images/askroom/btn_查看视频s.png');
+          position: absolute;
+          right: 30px;
+          top: 21px;
+          cursor: pointer;
+          display: none;
+        }
+
+        > div {
+          position: absolute;
+
+          &:first-child {
+            left: 30px;
+          }
+
+          &:nth-child(2) {
+            left: 102px;
+          }
+          
+          &:nth-child(3) {
+            left: 197px;
+          }
+          
+          &:nth-child(4) {
+            left: 398px;
+          }
+        }
+
+        &:first-child {
+          border: none;
+          height: 32px;
+          line-height: 32px;
+          margin-bottom: 0;
+          color: #a8acb8;
+          > div {
+            position: absolute;
+            left: 20px;
+
+            &:nth-child(2) {
+              left: 104px;
+            }
+            
+            &:nth-child(3) {
+              left: 238px;
+            }
+            
+            &:nth-child(4) {
+              left: 442px;
+            }
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .recordvedio-main-right {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+  }
+}
+
+
+// 底部按钮
+.info-end {
+  line-height: 106px;
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+  margin-right: 32px;
+
+  >button {
+    width: 124px;
+    height: 40px;
+    vertical-align: bottom;
+    border-radius: 20px;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+
+    &.btn-ensure {
+      margin-right: 10px;
+      background-color: #457EFB;
+      // background-image: linear-gradient(#457EFB, #457EFB);#4c84ff
+      color: #fff;
+      box-shadow: 4px 4px 8px #4c84ff;
+    }
+
+    &.btn-reset,
+    &.btn-skip {
+      background-color: #fff;
+      // border: 4px solid #dfe2e9;
+      line-height: 36px;
+      box-shadow: 4px 4px 8px #c9c0d4;
+    }
+
+    &.btn-skip {
+      margin-right: 10px;
+    }
+  }
+}
+
+// @media screen and (max-width:1440px) {
+
+//   .askroom-main .askroom-detail>li>.content .greeting-room-list>li>.video-bg .vedio-btn[data-v-38bc3459],
+//   .askroom-main .askroom-detail>li>.content .asking-room-list>li>.video-bg .vedio-btn {
+//     width: 26px;
+//     height: 26px;
+//     background: url('../../assets/images/askroom/btn_查看视频s.png');
+
+//     &:hover {
+//       background: url('../../assets/images/askroom/btn_查看视频shover.png');
+//     }
+//   }
+// }

@@ -1,0 +1,143 @@
+<div class="mainbody">
+  <common-step></common-step>
+  <p class="infod-title">信息采集</p>
+  <!-- 滚动条父盒子 -->
+  <div class="body-checkinfo-agreement-box" id="body-checkinfo-scroll">
+    <!-- 滚动内容 -->
+    <div id="body-checkinfo-content">
+      <div class="infod-main">
+        <form action="" :model="pinfo" :rules="rules" ref="pinfo" class="person-info">
+          <div class="p-first-line">
+            <span class="pname">人员姓名</span>
+            <input type="text" id="pname" v-model="pinfo.name" disabled>
+            <span class="pnumber">腕带编号</span>
+            <input type="text" id="pnumber" v-model="pinfo.pnumber" disabled>
+          </div>
+          <div class="sep-line"></div>
+          <div class="p-second-line">
+            <span class="basic-info">基本信息</span>
+            <div class="basic-info-box">
+              <ul class="basic-info-list">
+                <li>
+                  <div>检查项目</div>
+                  <div>测量结果</div>
+                  <div>异常描述</div>
+                  <div>正常参考值</div>
+                </li>
+                <li class="infod-placeholder-container">
+                  <p>身高</p>
+                  <input type="text" placeholder="请输入" class="info-result">
+                  <span>厘米(cm)</span>
+                  <div class="infod-second-pc">
+                    <input type="text" placeholder="请输入" class="info-des">
+                  </div>
+                  <p class="normal-value">-</p>
+                </li>
+                <li class="infod-placeholder-container">
+                  <p>体重</p>
+                  <input type="text" placeholder="请输入" class="info-result">
+                  <span>公斤(kg)</span>
+                  <div class="infod-second-pc">
+                    <input type="text" placeholder="请输入" class="info-des">
+                  </div>
+                  <p class="normal-value">-</p>
+                </li>
+                <li class="infod-placeholder-container">
+                  <p>足长</p>
+                  <input type="text" placeholder="请输入" class="info-result">
+                  <span>厘米(cm)</span>
+                  <div class="infod-second-pc">
+                    <input type="text" placeholder="请输入" class="info-des">
+                  </div>
+                  <p class="normal-value">-</p>
+                </li>
+                <li>
+                  <p>收缩压</p>
+                  <div class="infod-rl-pc">
+                      <input type="text" placeholder="请输入" class="info-result-left">
+                    </div>
+                  <div class="sep-span">-</div>
+                  <div class="infod-resultr-pc">
+                      <input type="text" placeholder="请输入" class="info-result-right">
+                    </div>
+                  <span>毫米汞柱(mmHg)</span>
+                  <div class="infod-second-pc">
+                    <input type="text" placeholder="请输入" class="info-des">
+                  </div>
+                  <p class="normal-value">90-139</p>
+                </li>
+                <li>
+                  <p>舒张压</p>
+                  <div class="infod-rl-pc">
+                    <input type="text" placeholder="请输入" class="info-result-left">
+                  </div>
+                  <div class="sep-span">-</div>
+                  <div class="infod-resultr-pc">
+                    <input type="text" placeholder="请输入" class="info-result-right">
+                  </div>
+                  <span>毫米汞柱(mmHg)</span>
+                  <div class="infod-second-pc">
+                    <input type="text" placeholder="请输入" class="info-des">
+                  </div>
+                  <p class="normal-value">60-89</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sep-line"></div>
+          <div class="p-third-line">
+            <span class="collect-txt">采集情况</span>
+            <div class="collect-detail">
+              <form action="" method="get" v-model="checkList">
+                <label><input name="Fruit" type="checkbox" value="" />指纹采集</label>
+                <input type="text" class="finger-in">
+                <label class="blood"><input name="Fruit" type="checkbox" value="" />血液采集</label>
+                <input type="text" class="blood-in">
+                <div class="sep-line"></div>
+                <label class="hand"><input name="Fruit" type="checkbox" value="" />掌纹采集</label>
+                <input type="text" class="hand-in">
+                <label class="acho"><input name="Fruit" type="checkbox" value="" />酒精检测</label>
+                <input type="text" class="acho-in">
+                <div class="sep-line"></div>
+                <label class="feet"><input name="Fruit" type="checkbox" value="" />足迹采集</label>
+                <input type="text" class="feet-in">
+                <label class="other"><input name="Fruit" type="checkbox" value="" />其他采集</label>
+                <input type="text" class="other-in">
+              </form>
+            </div>
+          </div>
+          <div class="sep-line-last"></div>
+          <div class="p-fourth-line">
+            <span class="collect-txt">核查对比</span>
+            <div class="ver-compar">
+              <el-switch v-model="comvalue" :width=60 active-value="0" inactive-value="1" active-text="开启"
+                inactive-text="关闭" active-color="#4981fe" inactive-color="#c8ccda">
+              </el-switch>
+            </div>
+          </div>
+          <div class="sep-line-last"></div>
+          <div class="p-last-line">
+            <span class="collect-txt">信息入库</span>
+            <div class="info-db">
+              <el-switch v-model="infovalue" :width=60 active-value="0" inactive-value="1" active-text="开启"
+                inactive-text="关闭" active-color="#4981fe" inactive-color="#c8ccda">
+              </el-switch>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 滚动条 -->
+    <div id="body-checkinfo-scroll-bar">
+      <div id="body-checkinfo-bar"></div>
+    </div>
+  </div>
+  <div class="info-end">
+    <button class="btn-skip">跳过</button>
+    <button class="btn-ensure" @click="$router.push('/infoc')">提交</button>
+    <button class="btn-reset" @click="$router.back(-1)">取消</button>
+  </div>
+  <div class="info-end-tips">
+    <span>*</span>为必填项
+  </div>
+</div>
