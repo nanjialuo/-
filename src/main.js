@@ -45,11 +45,13 @@ axios.interceptors.request.use(
 // 引入公共组件
 import CommonStep from "./components/common/CommonStep.vue"
 import CommonHead from "./components/common/CommonHead.vue"
+import CommonHeadnav from './components/common/CommonHeadnav.vue'
 
 Vue.use(ElementUI)
 Vue.use(iView);
 Vue.component("common-step",CommonStep);
 Vue.component("common-head",CommonHead);
+Vue.component("common-headnav",CommonHeadnav);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

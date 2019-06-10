@@ -82,19 +82,28 @@
           <div class="p-last-line">
             <span class="pcatchall"><span class="info-tip">*</span>全局抓拍</span>
             <div id="detectCatch">
-              <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
-                :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess">
-                <img v-if="imageUrl" :src="imageUrl" class="avatar">
+                <!-- <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
+                  :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess">
+                  <img v-if="imageUrl" :src="imageUrl" class="avatar">
+                  <div class="upload-btn">
+                    <div class="sta-show"></div>
+                    <div class="hover-show">
+                      <div @click.self="catchPhoto" >抓拍</div>
+                      <div class="avatar-uploader-icon">上传</div>
+                    </div>
+                  </div>
+                </el-upload> -->
+                <img id="preview" :src="pinfo.pphoto" width=-1 height=-1 style="display:none" />
+                <input type='file' name="imgBox" id="imgBox" @change="setImagePreview" hidden />
                 <div class="upload-btn">
                   <div class="sta-show"></div>
                   <div class="hover-show">
-                    <div>抓拍</div>
-                    <div class="avatar-uploader-icon">上传</div>
+                    <div @click.self="catchPhoto">抓拍</div>
+                    <div class="uploadImg" id="uploadImg" @click="uploadImg">上传</div>
                   </div>
                 </div>
-              </el-upload>
-              <div class="delete-img" @click.self="deleteUploadImg('#detectCatch')"></div>
-            </div>
+                <div class="delete-img" @click.self="deleteUploadImg('#detectCatch')"></div>
+              </div>
           </div>
             <!-- 签名 -->
             <div class="sign-second-line">

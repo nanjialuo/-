@@ -1,11 +1,12 @@
 export default {
   data() {
     return {
-      pinfo: {
-        pname: '',
-        pnumber: '',
+      infoList: {
+        invoName: '',
+        invoNumber: '',
         insperson: '',
-        pdescription: ''
+        invoDes: '',
+        invoPhoto:[]
       },
       rules: {
         insperson: [{
@@ -31,12 +32,91 @@ export default {
     };
   },
   methods: {
+    // 获取当前用户信息
     // 上传图片
     handleAvatarSuccess(res, file) {
       this.imageUrl = URL.createObjectURL(file.raw);
     },
     uploadBtnHide(e) {
       e.currentTarget.style.display = "none"
+    },
+    // 预览图片
+    uploadImg(imgId) {
+      document.getElementById(imgId).click();
+    },
+    setImagePreview(imgId, pid, boxId) {
+
+      var docObj = document.getElementById(imgId);
+
+      var imgObjPreview = document.getElementById(pid);
+
+      if (docObj.files && docObj.files[0]) {
+
+        //火狐下，直接设img属性  
+
+        imgObjPreview.style.display = 'block';
+
+        imgObjPreview.style.width = '100%';
+
+        imgObjPreview.style.height = '80px';
+
+        imgObjPreview.style.margin = 'auto';
+
+        //imgObjPreview.src = docObj.files[0].getAsDataURL();  
+
+        //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式    
+
+        imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+        document.querySelector('#' + boxId + ' .delete-img').style.opacity = 1
+        document.querySelector('#' + boxId + ' .upload-btn').style.display = "none"
+        this.imageUrl = imgObjPreview.src
+        this.infoList.invoPhoto.push(imgObjPreview.src)
+        console.log(this.infoList);
+
+      } else {
+
+        //IE下，使用滤镜  
+
+        docObj.select();
+
+        var imgSrc = document.selection.createRange().text;
+
+        var localImagId = document.getElementById(boxId);
+
+        //必须设置初始大小  
+
+        localImagId.style.width = "100%";
+
+        localImagId.style.height = "80px";
+
+        //图片异常的捕捉，防止用户修改后缀来伪造图片  
+
+        try {
+
+          localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+
+          localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+
+        } catch (e) {
+
+          alert("您上传的图片格式不正确，请重新选择!");
+
+          return false;
+
+        }
+
+        imgObjPreview.style.display = 'none';
+
+        document.selection.empty();
+
+      }
+
+      return true;
+
+    },
+    // 抓拍
+    catchPhoto() {
+      console.log('抓拍');
     },
     // 存储小圆点
     pointsCreat(e) {
@@ -53,7 +133,7 @@ export default {
         obj.left = e.offsetX + 192 + 11 + 'px';
       }
       obj.top = e.offsetY + 22 + 'px';
-      this.pointsArr.push(obj)      
+      this.pointsArr.push(obj)
     },
     // 小圆点高亮 
     listCheck(id) {
@@ -101,6 +181,22 @@ export default {
       document.querySelector(id + " img").style.display = "none";
       document.querySelector(id + " .delete-img").style.opacity = "0";
       document.querySelector(id + " .upload-btn").style.display = "block";
+    },
+    // 提交 ***
+    async updateCheckInfo() {
+      // const {invoName, invoNumber,insperson, invoDes,invoPhoto} = info
+      // let res = await this.$axios.post("/", info);
+      // if(res.data.status == 200) {
+      //   this.$message({
+      //     message: '提交成功',
+      //     type: "success",
+      //     duration: 800
+      //   });
+      // 判断是否含有随身财物流程
+        this.$router.push("/ownf");
+        // this.$router.back(-1);
+      // }
+
     }
   },
   mounted() {

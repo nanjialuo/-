@@ -23,19 +23,6 @@
     }
   }
 }
-.el-upload--picture-card {
-  border-radius: 0;
-}
-.el-upload {
-  display: block;
-  // width: 140px;
-  width: 100%;
-  height: 134px;
-  border: 1px solid #cde3f6;
-  box-sizing: border-box;
-  background-color: #f2f9ff;
-  position: relative;
-}
 
 .sta-show {
   position: absolute;
@@ -77,7 +64,7 @@
       background-color: #4c84ff;
     }
 
-    &.avatar-uploader-icon {
+    &.uploadImg {
       background-color: #a8d1f5;
       float: right;
       &:hover {

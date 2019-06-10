@@ -24,6 +24,80 @@ export default {
     };
   },
   methods: {
+    // 预览图片
+    uploadImg() {
+      document.getElementById("imgBox").click();
+    },
+    setImagePreview() {
+
+      var docObj = document.getElementById("imgBox");
+
+      var imgObjPreview = document.getElementById("preview");
+
+      if (docObj.files && docObj.files[0]) {
+
+          //火狐下，直接设img属性  
+
+          imgObjPreview.style.display = 'block';
+
+          imgObjPreview.style.width = '100%';
+
+          imgObjPreview.style.height = '134px';
+
+          imgObjPreview.style.margin = 'auto';
+
+          //imgObjPreview.src = docObj.files[0].getAsDataURL();  
+
+          //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式    
+
+          imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+          document.querySelector('.delete-img').style.opacity = 1
+          document.querySelector('.upload-btn').style.display = "none"
+          this.imageUrl = imgObjPreview.src
+          this.pinfo.pphoto = imgObjPreview.src
+          console.log(this.pinfo);
+          
+      } else {
+
+          //IE下，使用滤镜  
+
+          docObj.select();
+
+          var imgSrc = document.selection.createRange().text;
+
+          var localImagId = document.getElementById("detectCatch");
+
+          //必须设置初始大小  
+
+          localImagId.style.width = "100%";
+
+          localImagId.style.height = "134px";
+
+          //图片异常的捕捉，防止用户修改后缀来伪造图片  
+
+          try {
+
+              localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+
+              localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+
+          } catch (e) {
+
+              alert("您上传的图片格式不正确，请重新选择!");
+
+              return false;
+
+          }
+
+          imgObjPreview.style.display = 'none';
+
+          document.selection.empty();
+
+      }
+
+      return true;
+
+  },
     uploadBtnHide(e) {
       e.currentTarget.style.display = "none"
     },
@@ -42,18 +116,10 @@ export default {
     },
     // 抓拍
     catchPhoto() {
-      console.log('抓拍');
-      
+      console.log('抓拍');    
     }
   },
   mounted() {
-    // placeholder 兼容ie9
-    function isPlaceholder() {
-      var input = document.createElement('input');
-      return 'placeholder' in input;
-    }
-    isPlaceholder();
-
     // 步骤条切换类名
     var lis = document.querySelectorAll('.stepbody .common-step .steps li')
     for (let i = 0; i < lis.length; i++) {

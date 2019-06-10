@@ -99,6 +99,9 @@
   top: 0;
   position: absolute;
   left: 9%;
+  border: 1px solid #cde3f6;
+  box-sizing: border-box;
+  background-color: #f2f9ff;
 }
 .detect-detail-main .person-info .sep-line {
   height: 16px;

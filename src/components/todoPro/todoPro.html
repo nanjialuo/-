@@ -42,8 +42,16 @@
           <li v-for="(activity, index) in activities" :key="index">
             <!-- 人员信息 -->
             <div class="userInfo">
+              <!-- 照片显示 实时照片、身份证照片、区分性别的默认照片 -->
+              <!-- <div class="userImg" v-if="activity.currentImg!=''">
+                {{@currentImg}}
+              </div>
+              <div class="userImg" v-else-if="activity.cardImg!=''">
+                {{@cardImg}}
+              </div> -->
               <div class="userImg">
-                <img src="../../assets/images/todo_process/step_默认头像.png" alt>
+                <img v-if="activity.sex=='male'" src="../../assets/images/todo_process/step_默认头像.png" alt>
+                <img v-else src="../../assets/images/todo_process/step_默认头像.png" alt>
               </div>
               <div class="userDetail">
                 <p>{{activity.name}}</p>
@@ -56,7 +64,8 @@
             <!-- 流程列表 -->
             <div class="userPro">
               <ul>
-                <li v-for="(item, index) in activity.process" :class="{proDone : item.done=='true'}" :key="index" @click="toOtherPro(index)">
+                <li v-for="(item, index) in activity.process" :class="{proDone : item.done=='true'}" :key="index"
+                  @click="toOtherPro(item.static,index)">
                   <a href="javascript:void(0);">
                     <div class="right">
                       <span></span>
@@ -178,6 +187,6 @@
     <!-- 滚动条 -->
     <div id="todopro-scroll-bar">
       <div id="todopro-bar"></div>
-  </div>
+    </div>
   </div>
 </div>

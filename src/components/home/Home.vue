@@ -1,10 +1,12 @@
 <template>
-  <common-head></common-head>
+  <div>
+    <common-head></common-head>
+    <common-headnav></common-headnav>
+  </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style scoped lang="less">

@@ -3,9 +3,9 @@
   <div class="entry-record-main">
     <div class="table-sort">
       <ul class="loc-sort">
-        <li @click="showCurrentSort($event,'.loc-sort')">全部</li>
-        <li class="currentSort" @click="showCurrentSort($event,'.loc-sort')">未出区</li>
-        <li @click="showCurrentSort($event,'.loc-sort')">已出区</li>
+        <li @click="showCurrentSort($event,'.loc-sort');handleUserList()">全部</li>
+        <li class="currentSort" @click="showCurrentSort($event,'.loc-sort');stayUserList()">未出区</li>
+        <li @click="showCurrentSort($event,'.loc-sort');outUserList()">已出区</li>
       </ul>
       <ul class="pe-sort">
         <li class="currentSort" @click="showCurrentSort($event,'.pe-sort')">涉案人员</li>

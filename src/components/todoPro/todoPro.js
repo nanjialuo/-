@@ -6,6 +6,13 @@ export default {
           name: "龚勇",
           timestamp: "20:46",
           number: "000000123",
+          sex:'male',
+          // 实时照片
+          // currentImg:'',
+          // 身份证照片
+          // cardImg:'',
+          // 是否是固化流程
+          // static:'ture'
           process: [{
               proName: "入区登记",
               done: true,
@@ -348,8 +355,17 @@ export default {
     },
 
     // 流程跳转
-    toOtherPro(i) {
+    toOtherPro(m,i) {
       if (i == 1) {
+        // 判断是否为固化流程
+        // if(m) {
+        //   this.$message({
+        //     message: '请先进行<固化流程应做流程>',
+        //     type: "info",
+        //     duration: 800
+        //   });
+        //   return;
+        // }
         this.$router.push('/info')
       } else if (i == 2) {
         this.$router.push('/ownf')

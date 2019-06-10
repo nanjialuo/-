@@ -1,18 +1,18 @@
-.common-head .head-top {
+.header {
   background: linear-gradient(to right, #565353 , #434040);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#565353, endColorstr=#434040);
 }
 
-.common-head .head-nav {
+.headnav {
   background: linear-gradient(to right, #2b2828 , #332f2f);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#2b2828, endColorstr=#332f2f);
 }
 
-.common-head .head-nav .nav-list>li>a:hover {
+.headnav .nav-list>li>a:hover {
   background-color: #494545;
 }
 
-.common-head .head-nav .nav-list>li.currentHeadNav>a {
+.headnav .nav-list>li.currentHeadNav>a {
   background-color: #494545;
 }
 

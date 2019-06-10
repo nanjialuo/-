@@ -1,30 +1,30 @@
-.common-head .head-top {
-    background: linear-gradient(to right, #ee8723 , #ec7627);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#ee8723, endColorstr=#ec7627);
-  }
-  
-  .common-head .head-nav {
-    background: linear-gradient(to right, #a14f17 , #bf611e);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#a14f17, endColorstr=#bf611e);
-  }
-  
-  .common-head .head-nav .nav-list>li>a:hover {
-    background-color: #dd712c;
-  }
+.header {
+  background: linear-gradient(to right, #ee8723, #ec7627);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#ee8723, endColorstr=#ec7627);
+}
 
-  .common-head .head-nav .nav-list>li.currentHeadNav>a {
-    background-color: #dd712c;
-  }
-  
-  .ban_show .ban_aside {
-    background-color: #342923;
-  }
+.headnav {
+  background: linear-gradient(to right, #a14f17, #bf611e);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#a14f17, endColorstr=#bf611e);
+}
 
-  .ban_show .ban_aside .aside_menu>li a:hover {
-    background-color: #453c39 !important;
-    border-left: 4px solid #ec6a25 !important;
-  }
-  
+.headnav .nav-list>li>a:hover {
+  background-color: #dd712c;
+}
+
+.headnav .nav-list>li.currentHeadNav>a {
+  background-color: #dd712c;
+}
+
+.ban_show .ban_aside {
+  background-color: #342923;
+}
+
+.ban_show .ban_aside .aside_menu>li a:hover {
+  background-color: #453c39 !important;
+  border-left: 4px solid #ec6a25 !important;
+}
+
 .ban_show .ban_aside .aside_menu>li.currentAsideMenu a {
   background-color: #453c39 !important;
   border-left: 4px solid #ec6a25 !important;

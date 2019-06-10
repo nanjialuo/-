@@ -17,6 +17,10 @@
   margin-right: 2%;
   margin-bottom: 5px;
   position: relative;
+  border: 1px solid #cde3f6;
+  box-sizing: border-box;
+  background-color: #f2f9ff;
+  border-radius: 4px;
   .delete-img {
     width: 26px;
     height: 26px;
@@ -30,18 +34,6 @@
       background: url("../../../assets/images/bodycheck/btn_照片删除hover.png");
     }
   }
-}
-
-.el-upload {
-  display: block;
-  // width: 140px;
-  width: 100%;
-  height: 80px !important;
-  border: 1px solid #cde3f6;
-  box-sizing: border-box;
-  background-color: #f2f9ff;
-  float: left;
-  position: relative;
 
   &:hover {
     .hover-show {

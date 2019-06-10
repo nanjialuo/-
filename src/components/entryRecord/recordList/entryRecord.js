@@ -68,7 +68,17 @@ export default {
         duration: 800
       });
     },
-
+    // 状态筛选 未出区
+    async stayUserList(){
+      let res = await this.$axios.get("entryRecord");
+      this.entryRecord = res.data.filter(item => item.status == '0')
+      
+    },
+     // 状态筛选 已出区
+     async outUserList(){
+      let res = await this.$axios.get("entryRecord");
+      this.entryRecord = res.data.filter(item => item.status != '0')
+    },
     // 筛选框颜色
     showCurrentSort(e, f) {
       var lis = document.querySelectorAll(f + ' li')

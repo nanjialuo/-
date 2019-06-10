@@ -1,6 +1,7 @@
 <template>
   <div class="ban_container">
     <common-head></common-head>
+    <common-headnav></common-headnav>
     <div class="ban_show">
       <!-- 侧边栏 -->
       <div class="ban_aside aside-agreement-box" id="aside-scroll">

@@ -1,97 +1,60 @@
 <template>
-  <div class="common-head">
-    <div class="head-top" ref="head-top">
-      <div class="head-top-left">
-        <div class="head-img"></div>
-        <h1>办案区智能管控平台</h1>
-      </div>
-      <div class="head-top-right">
-        <div class="head-location iconfont iconbiaoji">江苏</div>
-        <!--换肤 -->
-        <div class="change-style iconfont iconpifu">
-          <div :class="{'style-choice':true, 'changeStyleShow':changeStyleShow}">
-            <div class="skin-style">
-              <span>皮肤</span>
-              <ul class="choose-skin-color" ref="chooseSkinColor">
-                <li
-                  v-for="(item, index) in skinStyleChoice"
-                  :key="index"
-                  @click="changeStyleEnsure($event, index)"
-                  :style="{backgroundColor:item}"
-                ></li>
-              </ul>
-            </div>
-            <div class="aside-style">
-              <span>侧栏</span>
-              <ul class="choose-aside-color" ref="chooseAsideColor">
-                <li
-                  v-for="(item, index) in asideStyleChoice"
-                  :key="index"
-                  @click="changeAsideStyleEnsure($event, index)"
-                  :style="{backgroundColor:item}"
-                ></li>
-              </ul>
-            </div>
+  <div class="header" ref="header">
+    <div class="header-left">
+      <div class="head-img"></div>
+      <h1>办案区智能管控平台</h1>
+    </div>
+    <div class="header-right">
+      <div class="head-location iconfont iconbiaoji">江苏</div>
+      <!--换肤 -->
+      <div class="change-style iconfont iconpifu">
+        <div :class="{'style-choice':true, 'changeStyleShow':changeStyleShow}">
+          <div class="skin-style">
+            <span>皮肤</span>
+            <ul class="choose-skin-color" ref="chooseSkinColor">
+              <li
+                v-for="(item, index) in skinStyleChoice"
+                :key="index"
+                @click="changeStyleEnsure($event, index)"
+                :style="{backgroundColor:item}"
+              ></li>
+            </ul>
+          </div>
+          <div class="aside-style">
+            <span>侧栏</span>
+            <ul class="choose-aside-color" ref="chooseAsideColor">
+              <li
+                v-for="(item, index) in asideStyleChoice"
+                :key="index"
+                @click="changeAsideStyleEnsure($event, index)"
+                :style="{backgroundColor:item}"
+              ></li>
+            </ul>
           </div>
         </div>
-        <div class="head-tips iconfont iconqipao">
-          <div class="head-fr-point">1</div>
-        </div>
-        <div class="head-download iconfont iconxiazai">
-          <div class="head-fr-point">3</div>
-        </div>
-        <div class="login-role iconfont iconrenyuan">
-          王仁鑫
-          <ul :class="{'role-rights':true, 'showList':roleListShow}">
-            <li>
-              <a href="#">修改密码</a>
-            </li>
-            <li>
-              <a href="#">关于我们</a>
-            </li>
-            <li>
-              <a href="#">帮助文档</a>
-            </li>
-            <li>
-              <a href="#">注销系统</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-    <div class="head-nav" ref="head-nav">
-      <ul class="nav-list" ref="navList">
-        <li @click="showCurrentNav($event)">
-          <a href="#">总览</a>
-        </li>
-        <li @click="showCurrentNav($event)">
-          <a href="#">首页</a>
-        </li>
-        <li @click="showCurrentNav($event)" class="currentHeadNav">
-          <a href="javascript:void(0);" @click="$router.push('/todo')">办案区管理</a>
-        </li>
-        <li @click="showCurrentNav($event)">
-          <a href="#">智能审讯</a>
-        </li>
-        <li @click="showCurrentNav($event)">
-          <a href="#">督导指挥</a>
-        </li>
-        <li @click="showCurrentNav($event)">
-          <a href="#">智能安防</a>
-        </li>
-        <li @click="showCurrentNav($event)">
-          <a href="#">运维统计</a>
-        </li>
-        <li @click="showCurrentNav($event)">
-          <a href="#">配置管理</a>
-        </li>
-      </ul>
-      <div>
-        <el-carousel height="48px" indicator-position="none">
-          <el-carousel-item v-for="(item,index) in attentions" :key="index" arrow="nerver">
-            <p class="small">{{ item }}</p>
-          </el-carousel-item>
-        </el-carousel>
+      <div class="head-tips iconfont iconqipao">
+        <div class="head-fr-point">1</div>
+      </div>
+      <div class="head-download iconfont iconxiazai">
+        <div class="head-fr-point">3</div>
+      </div>
+      <div class="login-role iconfont iconrenyuan">
+        王仁鑫
+        <ul :class="{'role-rights':true, 'showList':roleListShow}">
+          <li>
+            <a href="#">修改密码</a>
+          </li>
+          <li>
+            <a href="#">关于我们</a>
+          </li>
+          <li>
+            <a href="#">帮助文档</a>
+          </li>
+          <li>
+            <a href="#">注销系统</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -144,11 +107,11 @@ export default {
     },
     // 点击显示颜色
     showCurrentNav(e) {
-      var lis = this.$refs.navList.children
+      var lis = this.$refs.navList.children;
       for (let index = 0; index < lis.length; index++) {
-        lis[index].className = ""   
+        lis[index].className = "";
       }
-      e.currentTarget.className = 'currentHeadNav'
+      e.currentTarget.className = "currentHeadNav";
     },
     // 侧边栏小圆点
     changeAsideStyleEnsure(e, i) {
@@ -208,277 +171,216 @@ export default {
 
 <style scoped lang="less">
 @totalW: 1920px;
-
-.common-head {
+.header {
+  // width: 1920px;
   width: 100%;
-  height: 126px;
+  min-width: 1440px;
+  height: 78px;
+  line-height: 78px;
+  padding-left: 375px;
+  color: #fff;
+  // background: linear-gradient(to right, #536cf5, #507ffc);
+  font-size: 16px;
+  box-sizing: border-box;
+  position: relative;
+  .head-fr-point {
+    width: 16px;
+    height: 16px;
+    background-color: #fd5926;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+  }
 
-  .head-top {
-    // width: 1920px;
-    min-width: 1440px;
+  .header-left {
+    width: 375px;
+    padding-left: 86px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .head-img {
+      width: 35px;
+      height: 38px;
+      background: url("../../assets/images/head/login_检察院.png");
+      position: absolute;
+      left: 40px;
+      top: 20px;
+    }
+  }
+  .header-right {
     width: 100%;
-    height: 78px;
-    line-height: 78px;
-    padding-left: 375px;
-    color: #fff;
-    // background: linear-gradient(to right, #536cf5, #507ffc);
-    font-size: 16px;
-    box-sizing: border-box;
+    height: 100%;
     position: relative;
-    .head-fr-point {
-      width: 16px;
-      height: 16px;
-      background-color: #fd5926;
-      position: absolute;
-      left: 50%;
-      top: 25px;
-      font-size: 12px;
-      line-height: 16px;
-      text-align: center;
-      border-radius: 50%;
-    }
+  }
+  .head-location {
+    width: 48px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 270px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-    .head-top-left {
-      width: 375px;
-      padding-left: 86px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      .head-img {
-        width: 35px;
-        height: 38px;
-        background: url("../../assets/images/head/login_检察院.png");
-        position: absolute;
-        left: 40px;
-        top: 20px;
-      }
-    }
-    .head-top-right {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-    .head-location {
-      width: 48px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 270px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+  .change-style {
+    position: absolute;
+    right: 223px;
+    top: 0;
+    font-size: 20px;
+    cursor: pointer;
 
-    .change-style {
-      position: absolute;
-      right: 223px;
-      top: 0;
-      font-size: 20px;
-      cursor: pointer;
-
-      &:hover {
-        .style-choice {
-          display: block;
-        }
-      }
-
+    &:hover {
       .style-choice {
-        width: 195px;
-        height: 140px;
-        background-color: #fff;
-        position: absolute;
-        left: -65px;
-        top: 60px;
-        z-index: 999;
-        box-sizing: border-box;
-        border-radius: 5px;
-        border: 1px solid #dadbe4;
-        padding: 20px;
-        display: none;
-
-        &.changeStyleShow {
-          display: block;
-        }
-
-        .skin-style {
-          width: 140px;
-          height: 55px;
-          line-height: 14px;
-          color: #000;
-          position: relative;
-          > span {
-            font-size: 14px;
-          }
-
-          .choose-skin-color {
-            width: 108px;
-            position: absolute;
-            right: 0;
-            top: 0;
-
-            > li {
-              float: left;
-              width: 18px;
-              height: 18px;
-              line-height: 18px;
-              text-align: center;
-              border-radius: 50%;
-              margin-left: 16px;
-              margin-bottom: 14px;
-              color: #fff;
-            }
-          }
-        }
-        .aside-style {
-          margin-top: 27px;
-          line-height: 20px;
-          width: 140px;
-          height: 20px;
-          color: #000;
-          position: relative;
-
-          > span {
-            font-size: 14px;
-          }
-
-          .choose-aside-color {
-            width: 108px;
-            position: absolute;
-            right: 0;
-            top: 3px;
-            > li {
-              float: left;
-              width: 18px;
-              height: 18px;
-              border-radius: 50%;
-              margin-left: 16px;
-              color: #fff;
-            }
-          }
-        }
+        display: block;
       }
     }
 
-    .head-tips {
-      // width: 23px;
-      height: 100%;
+    .style-choice {
+      width: 195px;
+      height: 140px;
+      background-color: #fff;
       position: absolute;
-      right: 175px;
-      top: 0;
-      cursor: pointer;
-      font-size: 20px;
-    }
+      left: -65px;
+      top: 60px;
+      z-index: 999;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #dadbe4;
+      padding: 20px;
+      display: none;
 
-    .head-download {
-      // width: 22px;
-      font-size: 20px;
-      height: 100%;
-      position: absolute;
-      right: 127px;
-      top: 0;
-      cursor: pointer;
-    }
-
-    .login-role {
-      position: absolute;
-      right: 35px;
-      top: 0;
-      font-size: 16px;
-      cursor: pointer;
-
-      &:hover {
-        .role-rights {
-          display: block;
-        }
+      &.changeStyleShow {
+        display: block;
       }
 
-      .role-rights {
-        width: 96px;
-        height: 144px;
-        padding-top: 10px;
-        position: absolute;
-        left: -15px;
-        top: 60px;
-        background-color: #ffffff;
-        border: 1px solid #dadbe4;
-        box-sizing: border-box;
-        border-radius: 5px;
-        display: none;
-        z-index: 999;
-        font-size: 14px;
-
-        &.showList {
-          display: block;
+      .skin-style {
+        width: 140px;
+        height: 55px;
+        line-height: 14px;
+        color: #000;
+        position: relative;
+        > span {
+          font-size: 14px;
         }
 
-        > li {
-          height: 30px;
-          line-height: 30px;
-          text-align: center;
-          &:hover {
-            background-color: #f3f3f3;
-          }
+        .choose-skin-color {
+          width: 108px;
+          position: absolute;
+          right: 0;
+          top: 0;
 
-          > a {
-            color: #000;
+          > li {
+            float: left;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            border-radius: 50%;
+            margin-left: 16px;
+            margin-bottom: 14px;
+            color: #fff;
+          }
+        }
+      }
+      .aside-style {
+        margin-top: 27px;
+        line-height: 20px;
+        width: 140px;
+        height: 20px;
+        color: #000;
+        position: relative;
+
+        > span {
+          font-size: 14px;
+        }
+
+        .choose-aside-color {
+          width: 108px;
+          position: absolute;
+          right: 0;
+          top: 3px;
+          > li {
+            float: left;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            margin-left: 16px;
+            color: #fff;
           }
         }
       }
     }
   }
 
-  .head-nav {
-    width: 100%;
-    height: 48px;
-    line-height: 48px;
-    // background: linear-gradient(to right, #293797, #3745b1);
-    position: relative;
+  .head-tips {
+    // width: 23px;
+    height: 100%;
+    position: absolute;
+    right: 175px;
+    top: 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
 
-    .nav-list {
+  .head-download {
+    // width: 22px;
+    font-size: 20px;
+    height: 100%;
+    position: absolute;
+    right: 127px;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .login-role {
+    position: absolute;
+    right: 35px;
+    top: 0;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      .role-rights {
+        display: block;
+      }
+    }
+
+    .role-rights {
+      width: 96px;
+      height: 144px;
+      padding-top: 10px;
+      position: absolute;
+      left: -15px;
+      top: 60px;
+      background-color: #ffffff;
+      border: 1px solid #dadbe4;
+      box-sizing: border-box;
+      border-radius: 5px;
+      display: none;
+      z-index: 999;
+      font-size: 14px;
+
+      &.showList {
+        display: block;
+      }
+
       > li {
-        float: left;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        &:hover {
+          background-color: #f3f3f3;
+        }
 
         > a {
-          display: block;
-          width: 108px;
-          height: 100%;
-          color: #fff;
-          text-align: center;
-          font-size: 14px;
-
-          // &:hover {
-          //   background-color: #3e53d3;
-          // }
+          color: #000;
         }
       }
     }
-  }
-}
-</style>
-<style lang="less">
-.el-carousel__container {
-  right: -400px;
-
-  > button {
-    width: 0;
-    height: 0;
-    color: transparent;
-  }
-}
-.el-carousel__item {
-  > p {
-    color: #fab251;
-    font-size: 14px;
-    line-height: 48px;
-    margin: 0;
-    padding-left: 23px;
-    background: url('../../assets/images/head/ind_报警.png') no-repeat left center;
-  }
-}
-
-@media screen and (max-width:1440px) {
-
-  .el-carousel__item > p {
-    font-size: 12px;
   }
 }
 </style>

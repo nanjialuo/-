@@ -1,40 +1,62 @@
-#modifypwd input::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #a8acb8;
-}
-#modifypwd input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #a8acb8;
-}
-#modifypwd input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #a8acb8;
-}
-#modifypwd input::-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #a8acb8;
-}
-#modifypwd .placeholder {
-  position: absolute;
-  top: 0px;
-  left: 10px !important;
-  z-index: 10;
-  color: #a8acb8;
-}
-.father {
-  width: 600px;
-  height: 300px;
+#detectCatch {
+  width: 176px;
+  height: 134px;
+  border: 1px solid #cde3f6;
+  box-sizing: border-box;
+  background-color: #f2f9ff;
   position: relative;
-  border: 1px solid #a8acb8;
 }
-.father span {
+#detectCatch:hover .sta-show {
+  display: none;
+}
+#detectCatch:hover .hover-show {
+  display: block;
+}
+.sta-show {
   position: absolute;
-  left: 0;
-  top: 0;
-  color: #d77;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #a8d1f5 url("../../assets/images/bodycheck/btn_添加照片.png") no-repeat center;
 }
-.father .son {
+.hover-show {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 98px;
+  width: 55%;
+  height: 26px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+  display: none;
+}
+.hover-show > div {
+  width: 49px;
+  width: 50%;
+  line-height: 26px;
+  font-size: 12px;
+  outline: none;
+  color: #fff;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #a8d1f5;
+  cursor: pointer;
+}
+.delete-img {
+  width: 26px;
+  height: 26px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
+  background: url("../../assets/images/bodycheck/btn_照片删除.png");
+  opacity: 0;
+}
+.delete-img:hover {
+  background: url("../../assets/images/bodycheck/btn_照片删除hover.png");
 }

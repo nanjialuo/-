@@ -1,6 +1,8 @@
 export default {
   data() {
     return {
+      // 腕带编号
+      wristbandNum:'',
       checklist:[
         {id:1,
           name:'张国强',
@@ -107,7 +109,18 @@ export default {
         model.style.visibility = "hidden";
         overlay.style.visibility = "hidden";
       },
-
+      // 获取系统所有涉案人员
+      // async getRelativeInfo() {
+      //   let res = await this.$axios.get("todoProList");
+      //   // console.log(res);
+      //   if(res.data.indexOf(this.wristbandNum) == -1) {
+      //     this.$message({
+      //           message: '未查到该涉案人员信息，请确认',
+      //           type: "info",
+      //           duration: 800
+      //         });
+      //   }
+      // },
       // 处理ie9的placeholder
       addplaceholder() {
         if ($("#modifypwd .placeholder").length > 0) {

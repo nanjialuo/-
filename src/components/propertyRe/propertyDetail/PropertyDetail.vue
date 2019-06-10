@@ -7,7 +7,6 @@
 </style>
 <style lang="less">
 #detectCatch {
- height: 134px;
   .delete-img {
     width: 26px;
     height: 26px;
@@ -21,18 +20,6 @@
       background: url("../../../assets/images/bodycheck/btn_照片删除hover.png");
     }
   }
-}
-.el-upload--picture-card {
-  border-radius: 0;
-}
- #detectCatch .el-upload {
-  display: block;
-  width: 100%;
-  height: 134px !important;
-  border: 1px solid #cde3f6;
-  box-sizing: border-box;
-  background-color: #f2f9ff;
-  position: relative;
 
   &:hover {
     .hover-show {

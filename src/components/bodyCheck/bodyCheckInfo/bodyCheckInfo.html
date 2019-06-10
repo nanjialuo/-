@@ -6,19 +6,19 @@
     <!-- 滚动内容 -->
     <div id="body-checkinfo-content">
       <div class="info-main">
-        <form action="" :model="pinfo" :rules="rules" ref="pinfo" class="person-info">
+        <form action="" :model="infoList" :rules="rules" ref="infoList" class="person-info">
           <div class="p-first-line">
             <span class="pname">人员姓名</span>
-            <input type="text" id="pname" v-model="pinfo.name" disabled>
+            <input type="text" id="pname" v-model="infoList.invoName" disabled>
             <span class="pnumber">腕带编号</span>
-            <input type="text" id="pnumber" v-model="pinfo.pnumber" disabled>
+            <input type="text" id="pnumber" v-model="infoList.invoNumber" disabled>
           </div>
           <div class="sep-line"></div>
           <div class="p-second-line">
             <span class="insperson">
               <span class="info-tip">*</span>检查人员
             </span>
-            <select v-model="pinfo.insperson">
+            <select v-model="infoList.insperson">
               <option value='' disabled selected style='display:none;'>请选择</option>
               <option value='0'>张三</option>
               <option value='1'>李四</option>
@@ -27,7 +27,7 @@
               <span class="info-tip">*</span>自述症状
             </span>
             <div class="placeholder-box-right">
-              <input type="text" id="pdescription" v-model="pinfo.pdescription" value="请输入" placeholder="请输入">
+              <input type="text" id="pdescription" v-model="infoList.invoDes" value="请输入" placeholder="无">
             </div>
           </div>
           <div class="sep-line"></div>
@@ -68,7 +68,7 @@
                       <span class="c-img-re">相关图片</span>
                       <div>
                         <div id="showImgbox">
-                          <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
+                          <!-- <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
                             :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess">
                             <img v-if="imageUrl" :src="imageUrl" class="avatar">
                             <div class="upload-btn">
@@ -78,11 +78,20 @@
                                 <div class="avatar-uploader-icon">上传</div>
                               </div>
                             </div>
-                          </el-upload>
+                          </el-upload> -->
+                          <img id="preview" :src="infoList.invoPhoto[0]" width=-1 height=-1 style="display:none" />
+                          <input type='file' name="imgBox" id="imgBox" @change="setImagePreview('imgBox', 'preview', 'showImgbox')" hidden />
+                          <div class="upload-btn">
+                            <div class="sta-show"></div>
+                            <div class="hover-show">
+                              <div @click.self="catchPhoto">抓拍</div>
+                              <div class="uploadImg" id="uploadImg" @click="uploadImg('imgBox')">上传</div>
+                            </div>
+                          </div>
                           <div class="delete-img" @click.self="deleteUploadImg('#showImgbox')"></div>
                         </div>
                         <div id="showImgbox1">
-                          <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
+                          <!-- <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
                             :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess1">
                             <img v-if="imageUrl1" :src="imageUrl1" class="avatar">
                             <div class="upload-btn">
@@ -92,11 +101,20 @@
                                 <div class="avatar-uploader-icon">上传</div>
                               </div>
                             </div>
-                          </el-upload>
+                          </el-upload> -->
+                          <img id="preview1" :src="infoList.invoPhoto[1]" width=-1 height=-1 style="display:none" />
+                          <input type='file' name="imgBox1" id="imgBox1" @change="setImagePreview('imgBox1', 'preview1', 'showImgbox1')" hidden />
+                          <div class="upload-btn">
+                            <div class="sta-show"></div>
+                            <div class="hover-show">
+                              <div @click.self="catchPhoto">抓拍</div>
+                              <div class="uploadImg" id="uploadImg" @click="uploadImg('imgBox1')">上传</div>
+                            </div>
+                          </div>
                           <div class="delete-img" @click.self="deleteUploadImg('#showImgbox1')"></div>
                         </div>
                         <div id="showImgbox2">
-                          <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
+                          <!-- <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
                             :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess2">
                             <img v-if="imageUrl2" :src="imageUrl2" class="avatar">
                             <div class="upload-btn">
@@ -106,11 +124,20 @@
                                 <div class="avatar-uploader-icon">上传</div>
                               </div>
                             </div>
-                          </el-upload>
+                          </el-upload> -->
+                          <img id="preview2" :src="infoList.invoPhoto" width=-1 height=-1 style="display:none" />
+                          <input type='file' name="imgBox2" id="imgBox2" @change="setImagePreview('imgBox2', 'preview2', 'showImgbox2')" hidden />
+                          <div class="upload-btn">
+                            <div class="sta-show"></div>
+                            <div class="hover-show">
+                              <div @click.self="catchPhoto">抓拍</div>
+                              <div class="uploadImg" id="uploadImg2" @click="uploadImg('imgBox2')">上传</div>
+                            </div>
+                          </div>
                           <div class="delete-img" @click.self="deleteUploadImg('#showImgbox2')"></div>
                         </div>
                         <div id="showImgbox3">
-                          <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
+                          <!-- <el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card"
                             :show-file-list="false" ref="upload" :on-success="handleAvatarSuccess3">
                             <img v-if="imageUrl3" :src="imageUrl3" class="avatar">
                             <div class="upload-btn">
@@ -120,7 +147,16 @@
                                 <div class="avatar-uploader-icon">上传</div>
                               </div>
                             </div>
-                          </el-upload>
+                          </el-upload> -->
+                          <img id="preview3" :src="infoList.invoPhoto" width=-1 height=-1 style="display:none" />
+                          <input type='file' name="imgBox3" id="imgBox3" @change="setImagePreview('imgBox3', 'preview3', 'showImgbox3')" hidden />
+                          <div class="upload-btn">
+                            <div class="sta-show"></div>
+                            <div class="hover-show">
+                              <div @click.self="catchPhoto">抓拍</div>
+                              <div class="uploadImg" id="uploadImg3" @click="uploadImg('imgBox3')">上传</div>
+                            </div>
+                          </div>
                           <div class="delete-img" @click.self="deleteUploadImg('#showImgbox3')"></div>
                         </div>
                       </div>
@@ -262,7 +298,7 @@
     </div>
   </div>
   <div class="info-end">
-    <button class="btn-ensure" @click="$router.push('/check')">提交</button>
+    <button class="btn-ensure" @click="updateCheckInfo">提交</button>
     <button class="btn-reset" @click="$router.back(-1)">取消</button>
   </div>
   <div class="info-end-tips">

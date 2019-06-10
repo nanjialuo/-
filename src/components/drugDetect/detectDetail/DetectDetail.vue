@@ -20,19 +20,6 @@
       background: url("../../../assets/images/bodycheck/btn_照片删除hover.png");
     }
   }
-}
-.el-upload--picture-card {
-  border-radius: 0;
-}
-.el-upload {
-  display: block;
-  // width: 140px;
-  width: 100%;
-  height: 134px;
-  border: 1px solid #cde3f6;
-  box-sizing: border-box;
-  background-color: #f2f9ff;
-  position: relative;
 
   &:hover {
     .hover-show {
@@ -79,6 +66,7 @@
       text-align: center;
       box-sizing: border-box;
       background-color: #a8d1f5;
+      cursor: pointer;
 
       &:hover {
         background-color: #4c84ff;
